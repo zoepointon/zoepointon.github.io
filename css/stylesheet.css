@@ -1,24 +1,18 @@
 body {
   transition: ease 0.5s;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
-body.portfolio {
+
+
+
+
+
+
+
+.nav-container svg:hover, .overlay a:hover, .overlay a:focus, .nav-container svg:focus, .overlay a:focus, .overlay a:focus {
+  opacity: 0.3;
   transition: ease 0.5s;
-  background-color: #f5f5f5;
-}
-
-body.about {
-  transition: ease 0.5s;
-  background-color: #f5f5f5;
-}
-
-body.portfolio .nav-container .nav-logo a {
-  color: #fff;
-}
-
-body.portfolio .nav-container .st0 {
-  fill: #fff;
 }
 
 
@@ -28,15 +22,6 @@ body.portfolio .nav-container .st0 {
 
 
 
-
-
-.about-top-text h1, .about-top-text p {
-  color: #fff;
-}
-
-.about-top-text p span.highlight-text-home, div.about-uni p span.highlight-text-home {
-  color: #515a51;
-}
 
 div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
   overflow: hidden;
@@ -54,8 +39,8 @@ div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo {
   min-height: 100vh;
   float: right;
   object-fit: cover;
-  -webkit-filter: grayscale(50%) brightness(110%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(50%) brightness(110%);
+  -webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(110%);
 }
 
 div.about-top-text, div.about-uni-text {
@@ -79,16 +64,9 @@ div.about-top-text, div.about-uni-text {
   }
 }
 
-body.about svg .play, body.about svg g.red-cog .red-cog-outside, body.about svg .pencil-rubber, body.about svg .pencil-point {
-  fill: #515a51;
-}
-
-body.about svg .pencil-line {
-  stroke: #515a51;
-}
 
 body.about .timeline-heading h4 {
-  color: #515a51;
+  color: #000;
 }
 
 .timeline-about h1 {
@@ -102,10 +80,6 @@ body.about .timeline-heading h4 {
 
 div.experience {
   margin-bottom: 100px;
-}
-
-body.about .footer {
-  background-color: #898985;
 }
 
 
@@ -140,8 +114,8 @@ div.home .myVideo {
   float: right;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  -webkit-filter: grayscale(70%) brightness(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(70%) brightness(100%);
+  -webkit-filter: grayscale(100%) brightness(120%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(120%);
 }
 
 div.home, div.about-top {
@@ -173,7 +147,7 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
    z-index: 2;
    top: 0;
    left: 0;
-   background-color: #f5f5f5;
+   background-color: #000;
    overflow-x: hidden;
    transition: 0.5s;
 }
@@ -196,7 +170,7 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
    padding: 8px;
    text-decoration: none;
    font-size: 36px;
-   color: #000;
+   color: #fff;
    display: block;
    transition: 0.3s;
    font-family: 'Oswald', sans-serif;
@@ -205,10 +179,6 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
    transition: ease 0.5s;
    text-transform: uppercase;
    text-align: center;
-}
-
-.overlay a:hover, .overlay a:focus {
-   opacity: 0.3;
 }
 
 .overlay .closebtn {
@@ -232,7 +202,7 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
 }
 
 .overlay-nav-container a.closebtn svg .st0 {
-  fill: #000;
+  fill: #fff;
 }
 
 @media screen and (max-height: 450px) {
@@ -276,7 +246,7 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
   text-align: right;
 }
 
-.st0{fill:#fff;}
+.st0{fill:#000;}
 
 .nav-logo {
   text-align: center;
@@ -288,12 +258,7 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
   font-weight: 400;
   font-size: 40px;
   letter-spacing: 4px;
-  color: #fff;
-}
-
-.nav-container svg:hover {
-  opacity: 0.5;
-  transition: ease 1s;
+  color: #000;
 }
 
 .nav-container svg {
@@ -334,8 +299,6 @@ div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.loma
 
 
 
-
-
 /* fonts */
 p {
   font-family: 'Work Sans', sans-serif;
@@ -348,8 +311,7 @@ p.big-paragraph {
   font-size: 24px;
 }
 
-span.highlight-text-home {
-  color: #697b8c;
+span.highlight-text {
   font-weight: 600;
 }
 
@@ -370,7 +332,6 @@ h1 {
 
 
 
-
 div.container-fluid.home .top-image-container {
   padding-right: 0;
   padding-left: 0;
@@ -381,13 +342,10 @@ div.top-text {
   position: absolute;
 }
 
-div.top-text h1 {
-  color: #fff;
+div.top-text h1, div.top-text p  {
+  color: #000;
 }
 
-div.top-text p {
-  color: #fff;
-}
 
 @media screen and (max-width: 767px) {
   .top-text {
@@ -439,12 +397,6 @@ div.bio p {
 }
 
 .cameo img, .panicapp img, .around img, .binkybear img, .lomax img {
-  opacity: 0.3;
-  transition: ease 1s;
-}
-
-.cameo:hover img, .panicapp:hover img, .around:hover img, .binkybear:hover img, .lomax:hover img, .cameo:focus img, .panicapp:focus img, .around:focus img, .binkybear:focus img, .lomax:focus img {
-  opacity: 1;
   transition: ease 1s;
 }
 
@@ -568,7 +520,11 @@ a.secondary-button {
 }
 
 .pause, .black-cog, .black-pencil {
-  fill: #fff;
+  fill: #e4e4e4;
+}
+
+.play, .red-cog-outside, .pencil-rubber, .pencil-point {
+  fill: #000;
 }
 
 /* Motion Icon */
@@ -579,7 +535,6 @@ a.secondary-button {
 }
 
 .play {
-  fill: #aeb1b7;
   transform-origin: 50% 50%;
   transition: transform 0.2s linear;
 }
@@ -596,13 +551,9 @@ a.secondary-button {
 
 /* Develop Icon */
 
-.red-cog-outside {
-  fill: #aeb1b7;
-}
 
 .red-cog-center {
   fill: none;
-  stroke: #000000;
   stroke-width: 16;
   stroke-miterlimit: 10;
 }
@@ -630,13 +581,9 @@ a.secondary-button {
 
 /* Design Icon */
 
-.pencil-rubber, .pencil-point {
-  fill: #aeb1b7;
-}
-
 .pencil-line {
   fill: none;
-  stroke: #aeb1b7;
+  stroke: #000;
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
@@ -661,7 +608,7 @@ a.secondary-button {
 
 
 .footer {
-  background-color: #aeb1b7;
+  background-color: #000;
   padding-top: 14px;
 }
 

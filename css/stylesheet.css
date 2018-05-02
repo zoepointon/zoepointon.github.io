@@ -1,6 +1,6 @@
 body {
   transition: ease 0.5s;
-  background-color: #aeb1b7;
+  background-color: #f5f5f5;
 }
 
 body.portfolio {
@@ -10,15 +10,15 @@ body.portfolio {
 
 body.about {
   transition: ease 0.5s;
-  background-color: #898985;
+  background-color: #f5f5f5;
 }
 
 body.portfolio .nav-container .nav-logo a {
-  color: #000;
+  color: #fff;
 }
 
 body.portfolio .nav-container .st0 {
-  fill: #000;
+  fill: #fff;
 }
 
 

@@ -31,12 +31,7 @@ body {
 
 
 
-.top-image-container, .about-top-image-container, .uni-image-container, .hope-image-container {
-  width: 100%;
-  height: 400px;
-  min-height: 200px;
-  position: relative;
-}
+
 
 .top-image {
   background: url("../img/turn.JPG")no-repeat;
@@ -133,8 +128,15 @@ div.about-top-text, div.about-uni-text, div.hope-text {
   position: absolute;
 }
 
+.top-image-container, .about-top-image-container, .uni-image-container, .hope-image-container {
+  width: 100%;
+  height: 400px;
+  min-height: 200px;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
-  div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.home .myvideo-mask, div.hope .hope-myvideo-mask {
+  div.home-top .myvideo-mask, div.about-top.about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask {
     height: 400px;
     padding-right: 0;
     padding-left: 0;

@@ -15,12 +15,6 @@ body {
 
 
 
-
-
-
-
-
-
 .nav-container svg:hover, .overlay a:hover, .overlay a:focus, .nav-container svg:focus, .overlay a:focus, .overlay a:focus {
   opacity: 0.3;
   transition: ease 0.5s;
@@ -36,11 +30,8 @@ body {
 
 
 
-.col-md-8.top-image-container.myvideo-mask.video-bg {
-  padding-right: 0;
-}
 
-.top-image-container, .about-top-image-container, .uni-image-container {
+.top-image-container, .about-top-image-container, .uni-image-container, .hope-image-container {
   width: 100%;
   height: 400px;
   min-height: 200px;
@@ -79,16 +70,26 @@ body {
   filter: grayscale(100%) brightness(110%);
 }
 
-div.top-image, div.about-top-image, div.uni-image {
+.hope-image {
+  background: url("../img/hope.JPG")no-repeat;
+  height: 100%;
+  position:relative;
+  background-size: cover;
+  background-position: inherit;
+  -webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(110%);
+}
+
+div.top-image, div.about-top-image, div.uni-image, div.hope-image {
   display: none;
 }
 
-div.home .myvideo-mask {
+div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask {
   overflow: hidden;
   height: 100vh;
 }
 
-div.home .myVideo {
+div.home-top .myVideo {
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -100,7 +101,7 @@ div.home .myVideo {
   filter: grayscale(100%) brightness(110%);
 }
 
-div.home, div.about-top {
+div.home-top, div.about-top {
   height: 100vh;
 }
 
@@ -112,16 +113,11 @@ div.video-bg {
   background-color: #e8e8e8;
 }
 
-div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
-  overflow: hidden;
-  height: 100vh;
-}
-
-div.about-uni .about-uni-myvideo-mask {
+div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask {
   padding: 0;
 }
 
-div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo {
+div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo, div.hope .hope-myVideo {
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -132,18 +128,18 @@ div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo {
   filter: grayscale(100%) brightness(110%);
 }
 
-div.about-top-text, div.about-uni-text {
+div.about-top-text, div.about-uni-text, div.hope-text {
   bottom: 100px;
   position: absolute;
 }
 
 @media screen and (max-width: 767px) {
-  div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.home .myvideo-mask {
+  div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.home .myvideo-mask, div.hope .hope-myvideo-mask {
     height: 400px;
     padding-right: 0;
     padding-left: 0;
   }
-  div.about-top-text, div.about-uni-text {
+  div.about-top-text, div.about-uni-text, div.hope-text {
     bottom: 0;
     height: auto;
     position: inherit;
@@ -155,10 +151,10 @@ div.about-top-text, div.about-uni-text {
   div.top-text {
     top: 430px;
   }
-  div.top-image, div.about-top-image, div.uni-image {
+  div.top-image, div.about-top-image, div.uni-image, div.hope-image {
     display: block;
   }
-  video.myVideo, video.about-top-myVideo, video.about-uni-myVideo {
+  video.myVideo, video.about-top-myVideo, video.about-uni-myVideo, video.hope-myVideo {
     display: none;
   }
 }
@@ -433,22 +429,22 @@ div.top-text h1, div.top-text p  {
   height: 100vh;
 }
 
-.panicapp .row, .cameo .row,  .around .row, .bio .row, .icons .row, .binkybear .row, .lomax .row {
+.panicapp .row, .cameo .row, .bio .row, .icons .row {
   height: 100vh;
 }
 
-div.panicapp-text, div.cameo-text, div.around-text, div.bio p, div.icon, div.binkybear-text, div.lomax-text {
+div.panicapp-text, div.cameo-text, div.bio p, div.icon {
   position: inherit;
   top: 50%;
   transform: translateY(-50%);
 }
 
-div.top-text p, div.panicapp-text p, div.cameo-text p, div.around-text p, div.binkybear-text p, div.lomax-text p {
+div.top-text p, div.panicapp-text p, div.cameo-text p, div.hope-text p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-div.panicapp img, div.cameo img, div.around img, div.binkybear img, div.lomax img {
+div.panicapp img, div.cameo img {
   width: 100%;
   position: inherit;
   top: 50%;
@@ -464,9 +460,11 @@ div.bio p {
   margin-top: 20px;
 }
 
-.cameo img, .panicapp img, .around img, .binkybear img, .lomax img {
+.cameo img, .panicapp img {
   transition: ease 1s;
 }
+
+
 
 
 
@@ -545,8 +543,8 @@ a.secondary-button {
 
 
 div.top-portfolio {
-  padding-top: 220px;
-  padding-bottom: 120px;
+  padding-top: 180px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -589,16 +587,16 @@ div.top-portfolio h1 {
   text-align: center;
 }
 
-.design-icon, .develop-icon, .motion-icon {
+.design-icon, .develop-icon, .motion-icon, .research-icon {
   width: 250px;
   text-align: center;
 }
 
-.pause, .black-cog, .black-pencil {
+.pause, .black-cog, .black-pencil, .mag-handle {
   fill: #e4e4e4;
 }
 
-.play, .red-cog-outside, .pencil-rubber, .pencil-point {
+.play, .red-cog-outside, .pencil-rubber, .pencil-point, .mag-glass {
   fill: #000;
 }
 
@@ -679,6 +677,21 @@ div.top-portfolio h1 {
   transition: all 0.5s linear;
 }
 
+/* Research Icon */
+
+.mag {
+  transform-origin: 50% 32.5%;
+  transform: rotate(0deg);
+  transition: transform 0.5s linear;
+  animation-iteration-count: 1;
+}
+
+.research-icon:hover .mag {
+  transform-origin: 50% 32.5%;
+  transform: rotate(-35deg) scale(1.1);
+  transition: transform 0.5s linear;
+  animation-iteration-count: infinite;
+}
 
 
 

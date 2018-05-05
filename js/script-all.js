@@ -1,9 +1,3 @@
-// on load finished
-$(window).load(function() {
-    // select element and fade it out
-    $('.loading').fadeOut();
-});
-
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }

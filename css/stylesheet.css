@@ -136,7 +136,7 @@ div.about-top-text, div.about-uni-text, div.hope-text {
 }
 
 @media screen and (max-width: 767px) {
-  div.home-top .myvideo-mask, div.about-top.about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask {
+  div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask {
     height: 400px;
     padding-right: 0;
     padding-left: 0;

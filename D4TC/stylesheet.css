@@ -267,6 +267,21 @@ body.chapter-three .title-block {
   background-color: #202a4c;
 }
 
+.dip-swim-block {
+  background-color: #66c7c6;
+  margin-top: -13px;
+  padding: 80px 0;
+}
+
+.dip-swim-block img {
+  width: 100%;
+}
+
+.dip-swim-block .text p {
+  color: #071033;
+  padding-top: 80px;
+}
+
 
 
 

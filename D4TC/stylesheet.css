@@ -282,6 +282,35 @@ body.chapter-three .title-block {
   padding-top: 80px;
 }
 
+.dips-water-view-block {
+  background-color: #66c7c6;
+  padding-top: 20px;
+}
+
+.dips-water-view-block .text p {
+  position: absolute;
+  color: #071033;
+}
+
+.dip-back-block {
+  background-color: #387988;
+  margin-top: -13px;
+  padding-top: 100px;
+}
+
+.dip-back-block img {
+  width: 100%;
+}
+
+.dip-back-block h2 {
+  color: #fff;
+  padding-top: 140px;
+}
+
+body.chapter-three .next-block {
+  margin: 0;
+  background-color: #050C26;
+}
 
 
 

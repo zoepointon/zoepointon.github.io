@@ -181,6 +181,7 @@ body.chapter-two .title-block {
 
 .contact-lense-block img {
   width: 100%;
+  margin-bottom: -2px;
 }
 
 .contact-lense-block p {
@@ -189,6 +190,15 @@ body.chapter-two .title-block {
 
 body.chapter-two .next-block {
   margin-top: 0;
+}
+
+.vr-sea-block {
+  background-color: #112F3F;
+}
+
+.vr-sea-block .text p {
+  padding-top: 80px;
+  position: absolute;
 }
 
 

@@ -19,6 +19,13 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  font-family: 'Just Another Hand', script;
+  letter-spacing: 7px;
+  font-size: 50px;
+  color: #AF4F46;
+}
+
 p {
   font-family: 'Josefin Sans', helvetica, sans-serif;
   font-weight: 300;
@@ -188,18 +195,36 @@ body.chapter-two .title-block {
   padding-top: 80px;
 }
 
-body.chapter-two .next-block {
-  margin-top: 0;
-}
-
 .vr-sea-block {
-  background-color: #112F3F;
+  background-color: #0A3748;
 }
 
 .vr-sea-block .text p {
   padding-top: 80px;
   position: absolute;
 }
+
+.chip-back-block {
+  background-color: #051e31;
+  margin-top: -13px;
+  padding-top: 50px;
+}
+
+.chip-back-block img {
+  width: 100%;
+  margin-bottom: -1px;
+}
+
+.chip-back-block .text h2 {
+  padding-top: 220px;
+}
+
+body.chapter-two .next-block {
+  margin-top: 0;
+  background-color: #0c3040;
+}
+
+
 
 
 

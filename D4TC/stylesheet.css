@@ -1,0 +1,366 @@
+html, body {
+  background-color: #1f2a4d;
+}
+
+body {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 26px;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 10px;
+  font-size: 80px;
+  color: #fff;
+  text-align: left;
+}
+
+p {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+a {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #E88278;
+  margin: 0;
+}
+
+a:hover {
+  color: #E88278;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.drk-blue-bg {
+  background-color: #071033;
+}
+
+.bright-blue-bg {
+}
+
+.full-video, .full-img-block img {
+  width: 100%;
+  height: auto;
+}
+
+.title-block {
+  height: 100vh;
+}
+
+.title-block h1 {
+  margin-top: 40vh;
+}
+
+.next-block {
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+body.chapter-one .title-block {
+  background-color: #0B132A;
+  background-image: url("img/top-london.png");
+  background-repeat: no-repeat;
+  background-position: bottom 5vh right;
+  background-size: 85vh;
+}
+
+img.igo-logo {
+  width: 180px;
+}
+
+.world-map-block {
+  margin-top: 50px;
+}
+
+.world-map-block .text {
+  margin-bottom: -60px;
+}
+
+.uk-map-block .text {
+  margin-bottom: -100px;
+}
+
+.uk-map-block {
+  margin-top: 100px;
+}
+
+.wave-chart-block .text {
+  margin-bottom: -20px;
+}
+
+.wave-chart-block {
+  padding: 60px 0;
+  background-color: #0B132A;
+}
+
+.wave-chart-block .full-img-block p {
+  padding-top: 50px;
+}
+
+.london-map-block {
+  background-image: url("img/London.png");
+  background-repeat: no-repeat;
+  background-position: top -1px left;
+  background-size: 850px;
+  height: 80vh;
+}
+
+.london-map-block p {
+  padding-top: 35vh;
+}
+
+
+
+
+
+
+
+
+
+
+body.chapter-two {
+  background-color: #011e33;
+}
+
+body.chapter-two .title-block {
+  background-image: url("img/chip-head-zoom.png");
+  background-repeat: no-repeat;
+  background-position: bottom -1px right;
+  background-size: 50%;
+}
+
+.microchip-block {
+  padding: 80px 0;
+  background-color: #6bffea;
+}
+
+.microchip-block img {
+  width: 130px;
+}
+
+.microchip-block p {
+  color: #081B2A;
+  padding-top: 30px;
+}
+
+.contact-lense-block {
+  margin-top: 30px;
+}
+
+.dynamic-map-block .text {
+  padding-top: 100px;
+  position: absolute;
+}
+
+.contact-lense-block img {
+  width: 100%;
+}
+
+.contact-lense-block p {
+  padding-top: 80px;
+}
+
+body.chapter-two .next-block {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+body.chapter-three {
+  background-color: #071033;
+}
+
+body.chapter-three .title-block {
+  background-image: url("img/dip-head-zoom.png");
+  background-repeat: no-repeat;
+  background-position: bottom -1px right;
+  background-size: 38%;
+}
+
+.data-centre-chart-block {
+  background-color: #202a4c;
+  padding-top: 80px;
+}
+
+.data-centre-chart-block .text-top {
+  padding-bottom: 20px;
+}
+
+.data-centre-chart-block .text-bottom {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.data-centre-chart-block img {
+  width: 100%;
+}
+
+.floating-server-block {
+  background-color: #202a4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  height: 50px;
+  background-color: #080E1E;
+  line-height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+}
+
+nav span.burger {
+  font-size:30px;
+  cursor:pointer;
+  float: right;
+  margin-right: 30px;
+  line-height: 50px;
+  padding-top: 3px;
+}
+
+nav span.title {
+  float: left;
+  margin-left: 30px;
+  line-height: 50px;
+  padding-top: 3px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #080E1E;
+  opacity: 0.99;
+  z-index: 5;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #E88278;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  text-decoration: underline;
+}
+
+.overlay a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay a.closebtn:hover {
+  text-decoration: none;
+}
+
+.overlay a.title {
+  color: #fff;
+  font-size: 36px;
+}
+
+.overlay .content {
+  display: inline-flex;
+  margin: 0 150px;
+}
+
+.overlay .chapters {
+  width: 40%;
+  margin: 30px;
+}
+.overlay .text {
+  width: 60%;
+  margin: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay .chapters {
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+  }
+  .overlay .text {
+    display: none;
+  }
+  .overlay .content {
+    margin: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #080E1E;
+  height: 50px;
+  line-height: 50px;
+}

@@ -151,6 +151,64 @@ img.igo-logo {
 
 
 
+body.home {
+  background-color: #080e1d;
+}
+
+body.home footer {
+  margin-top: -50px;
+}
+
+body.home h1 {
+  margin-top: 25vh;
+  padding-bottom: 40px;
+}
+
+body.home p.text {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+body.about {
+  background-color: #080e1d;
+}
+
+body.about .title-block {
+  height: 400px;
+}
+
+body.about .title-block h1 {
+  margin-top: 180px;
+}
+
+body.about img {
+  margin: 30px 0;
+  opacity: 0.5;
+
+  width: 100%;
+}
+
+body.about img:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.definitions-block {
+  background-color: #081B2A;
+  padding: 30px 0;
+}
+
+
+
+
+
+
 
 body.chapter-two {
   background-color: #011e33;
@@ -318,6 +376,40 @@ body.chapter-three .next-block {
 
 
 
+@media screen and (max-width: 450px) {
+  .title-block h1 {
+    font-size: 50px;
+    margin-top: 30vh;
+  }
+  body.chapter-one .title-block {
+    background-size: 35vh;
+  }
+  .london-map-block {
+    background-size: 450px;
+    height: 55vh;
+  }
+  .container .row .text, .container .row .text p, .container .row .text h2 {
+    position: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .container.text {
+    margin-top: 10px;
+  }
+  .london-map-block p {
+    padding-top: 45vh;
+  }
+  .next-block a, .next-block p, .next-block p.right {
+    text-align: center;
+  }
+}
+
+
+
+
+
 
 
 
@@ -401,15 +493,19 @@ nav span.title {
 .overlay .content {
   display: inline-flex;
   margin: 0 150px;
+  line-height: 38px;
 }
 
 .overlay .chapters {
-  width: 40%;
+  width: 50%;
   margin: 30px;
 }
 .overlay .text {
-  width: 60%;
+  width: 50%;
   margin: 30px;
+}
+.overlay .content a {
+  margin-bottom: 0;
 }
 
 @media screen and (max-height: 450px) {

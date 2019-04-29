@@ -187,23 +187,32 @@ body.about .title-block h1 {
 }
 
 body.about img {
-  margin: 30px 0;
-  opacity: 0.5;
-
   width: 100%;
-}
-
-body.about img:hover {
-  opacity: 1;
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
 }
 
 .definitions-block {
   background-color: #081B2A;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
+.abstract-block {
+  background-color: #03060D;
+  padding: 60px 0;
+}
+
+
+body.about .about-text {
+  padding: 60px 0;
+}
+
+p.figure {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+body.about .about-text .row {
+  margin-top: 40px;
+}
 
 
 
@@ -376,6 +385,109 @@ body.chapter-three .next-block {
 
 
 
+
+
+
+
+
+
+body.chapter-four {
+  background-color: #10172B;
+}
+
+body.chapter-four .title-block {
+  background-image: url("img/nacho.png");
+  background-repeat: no-repeat;
+  background-position: bottom -1px right;
+  background-size: 45%;
+}
+
+
+
+.boat-trip-block {
+  background-color: #1e2640;
+  padding-top: 50px;
+}
+
+.boat-trip-block img {
+  width: 100%;
+}
+
+.boat-trip-block .text p {
+  padding-top: 100px;
+  position: absolute;
+}
+
+
+
+.boat-pool-block {
+  background-color: #67c6c6;
+}
+
+.boat-pool-block .text p {
+  padding-top: 50vh;
+  position: absolute;
+  color: #071033;
+}
+
+
+
+.find-friend-block {
+  height: 80vh;
+  background-image: url("img/chip-smile.png");
+  background-repeat: no-repeat;
+  background-position: bottom -1px right;
+  background-size: 85vh;
+}
+
+.find-friend-block img {
+  width: 50%;
+  margin-top: 10vh;
+}
+
+.find-friend-block p {
+  margin-top: 15vh;
+}
+
+
+
+.choosing-block {
+  background-color: #1e2640;
+  padding-top: 80px;
+}
+
+.choosing-block img {
+  width: 100%;
+}
+
+.choosing-block .text p {
+  padding-top: 10px;
+  position: absolute;
+}
+
+
+
+
+.eating-block img {
+  width: 100%;
+}
+
+
+
+
+body.chapter-four .next-block {
+  margin-top: 0;
+  background-color: #1C2541;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 450px) {
   .title-block h1 {
     font-size: 50px;
@@ -433,11 +545,12 @@ nav span.burger {
   padding-top: 3px;
 }
 
-nav span.title {
+nav a.title {
   float: left;
   margin-left: 30px;
   line-height: 50px;
   padding-top: 3px;
+  color: #fff;
 }
 
 .overlay {

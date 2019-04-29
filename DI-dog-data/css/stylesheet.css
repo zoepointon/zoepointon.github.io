@@ -1,0 +1,854 @@
+html {
+
+}
+
+body {
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 26px;
+  color: #000;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 12px;
+  font-size: 65px;
+  line-height: 90px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 6px;
+  font-size: 22px;
+  line-height: 40px;
+  color: #000;
+}
+
+p {
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000;
+  margin: 0;
+}
+
+a.primary-btn {
+  padding: 15px 40px;
+  background-color: #EA9A69;
+  color: #fff;
+  border-radius: 50px;
+  transition: linear 0.5s;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0;
+  transition: linear 0.2s;
+}
+
+a.secondary-btn {
+  transition: linear 0.2s;
+  color: #EA9A69;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0;
+  transition: linear 0.2s;
+}
+
+a.primary-btn:hover {
+  background-color: #F2BE9E;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+a.secondary-btn:hover {
+  padding-left: 10px;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+img {
+  100%;
+}
+
+.white {
+  color: #fff;
+}
+
+.light {
+  background-color: #EFEFEF;
+}
+
+.mid {
+  background-color: #8D8D8D;
+}
+
+.dark {
+  background-color: #414141;
+}
+
+
+
+
+
+
+.title-block {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title-block h2 {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.title-block h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.title-block .circle {
+  height: 140vh;
+  width: 140vh;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -20vh;
+  z-index: 0;
+  margin: auto;
+}
+
+.title-block img {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.title-block .container, .title-block .row, .title-block .center, .title-block a {
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.about-block {
+  background-color: #414141;
+  padding: 60px 0;
+  position: relative;
+}
+
+.about-block h2, .about-block p {
+  color: #fff;
+  text-align: left;
+}
+
+
+
+
+.stats {
+  padding: 60px 0;
+}
+
+.general-stats-block .year {
+  color: #DEA683;
+}
+
+.general-stats-block .no-ads {
+  color: #9FB0B4;
+}
+
+.general-stats-block .mode-price {
+  color: #E2C18D;
+}
+
+
+
+
+
+.chart-one-block {
+  padding: 60px 0;
+}
+
+#chart-1 {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    /* padding-bottom will be overwritten by JavaScript later */
+    padding-bottom: 100%;
+}
+#chart-1 > svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+.leg-intro-block {
+  padding: 60px 0;
+  text-align: left;
+  color: #fff;
+}
+
+.leg-intro-block h2, .leg-intro-block p {
+  color: #fff;
+}
+
+
+
+
+.leg-ad-block {
+  padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.icons-block {
+  padding: 60px 0;
+}
+
+.icons-block h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icons-block .icon img {
+  width: 100px;
+  text-align: center;
+}
+
+.icons-block h2 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pa-title-block h1, .pa-title-block p {
+  text-align: center;
+}
+
+.pa-title-block h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.pa-title-block p {
+  margin-bottom: 50px;
+}
+
+.pa-title-block .circle-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.pa-title-block .circle {
+  height: 150vh;
+  width: 150vh;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  margin-top: -125vh;
+}
+
+
+
+
+
+
+
+.pick-dog {
+  margin: 40px 0;
+}
+
+.pick-dog .dog {
+  margin-bottom: 40px;
+}
+
+.pick-dog .img-holder {
+  margin-bottom: 40px;
+}
+
+.pick-dog .img-holder {
+  width: 100%;
+  height: 240px;
+  text-align: center;
+}
+
+.pick-dog .img-holder img {
+  height: 260px;
+  margin-top: -20px;
+}
+
+.dog .img-holder {
+  border-radius: 5000px 5000px 0 0;
+}
+
+.dog-one .img-holder {
+  background-color: #C5CFD2;
+}
+
+.dog-two .img-holder {
+  background-color: #F0ECE9;
+}
+
+.dog-three .img-holder {
+  background-color: #FAF7F0;
+}
+
+.dog-four .img-holder {
+  background-color: #F8EDE6;
+}
+
+.dog-five .img-holder {
+  background-color: #EFEFEF;
+}
+
+.dog-six .img-holder {
+  background-color: #F9F3EA;
+}
+
+.dog-one h1 {
+  color: #9FB0B4;
+}
+
+.dog-two h1 {
+  color: #6A503D;
+}
+
+.dog-three h1 {
+  color: #353433;
+}
+
+.dog-four h1 {
+  color: #DEA683;
+}
+
+.dog-five h1 {
+  color: #414141;
+}
+
+.dog-six h1 {
+  color: #E2C18D;
+}
+
+.dog p {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.breed-title-block {
+  height: 75vh;
+}
+
+.breed-title-block img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.breed-title-block .circle {
+  height: 135vh;
+  width: 135vh;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: -30vh;
+  z-index: 0;
+  margin: auto;
+}
+
+.breed-title-block h2 {
+  margin-top: 15vh;
+}
+
+
+
+
+
+.breed-stats-block {
+  position: relative;
+}
+
+
+
+
+
+.four-col-block {
+  padding: 60px 0;
+}
+
+.four-col-block img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+
+
+
+.text-block {
+  padding: 60px 0;
+}
+
+
+
+
+.breed-bottom-block {
+  padding: 60px 0;
+}
+
+.breed-bottom-block .location p {
+  margin-bottom: 20px;
+}
+
+a.unactive {
+  background-color: #B7B7B7;
+  color: #505050;
+  pointer-events: none;
+}
+
+
+
+
+
+
+.frenchie .breed-title-block h2 {
+    margin-top: 8vh;
+}
+
+.frenchie .breed-bottom-block {
+  background: linear-gradient(90deg, #F3F5F5 50%, #fff 50%);
+}
+
+.frenchie .light {
+  background-color: #F3F5F5;
+}
+
+.frenchie .mid {
+  background-color: #C5CFD2;
+}
+
+.frenchie .dark {
+  background-color: #9FB0B4;
+}
+
+.frenchie .breed-stats-block h1, .frenchie .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+.chihuahua .breed-bottom-block {
+  background: linear-gradient(90deg, #F0ECE9 50%, #fff 50%);
+}
+
+.chihuahua .light {
+  background-color: #F0ECE9;
+}
+
+.chihuahua .mid {
+  background-color: #A5958A;
+}
+
+.chihuahua .dark {
+  background-color: #6A503D;
+}
+
+.chihuahua .breed-stats-block h1, .chihuahua .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.pug .breed-title-block img {
+    margin-top: 100px;
+}
+
+.pug .breed-bottom-block {
+  background: linear-gradient(90deg, #FAF7F0 50%, #fff 50%);
+}
+
+.pug .light {
+  background-color: #FAF7F0;
+}
+
+.pug .mid {
+  background-color: #F6F0E1;
+}
+
+.pug .dark {
+  background-color: #F0E6CE;
+}
+
+.pug .text-block-top-pad {
+  margin-top: 60px;
+}
+
+.pug .text-block-top-pad img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cockapoo .breed-bottom-block {
+  background: linear-gradient(90deg, #F8EDE6 50%, #fff 50%);
+}
+
+.cockapoo .light {
+  background-color: #F8EDE6;
+}
+
+.cockapoo .mid {
+  background-color: #EBC9B3;
+}
+
+.cockapoo .dark {
+  background-color: #DEA683;
+}
+
+.cockapoo .text-block img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.staffy .breed-title-block img {
+    margin-top: 100px;
+}
+
+.staffy .breed-bottom-block {
+  background: linear-gradient(90deg, #EFEFEF 50%, #fff 50%);
+}
+
+.staffy .light {
+  background-color: #EFEFEF;
+}
+
+.staffy .mid {
+  background-color: #8D8D8D;
+}
+
+.staffy .dark {
+  background-color: #414141;
+}
+
+.staffy .breed-stats-block h1, .staffy .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.labrador .breed-title-block img {
+    margin-top: 50px;
+}
+
+.labrador .breed-bottom-block {
+  background: linear-gradient(90deg, #F9F3EA 50%, #fff 50%);
+}
+
+.labrador .light {
+  background-color: #F9F3EA;
+}
+
+.labrador .mid {
+  background-color: #EDDABB;
+}
+
+.labrador .dark {
+  background-color: #E2C18D;
+}
+
+
+
+
+
+
+
+
+
+
+footer.page-footer {
+  background-color: #414141;
+  color: #fff;
+  padding: 60px 0;
+}
+
+footer.page-footer h2, footer.page-footer p {
+  color: #fff;
+}
+
+footer.page-footer a {
+  margin-right: 20px;
+}
+
+footer a.text-link {
+  margin-right: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+nav {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+}
+
+nav span.burger {
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+  line-height: 50px;
+  padding-top: 3px;
+  z-index: 10;
+}
+
+nav span.title a {
+  float: left;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  color: #000;
+  float: left;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.99;
+  z-index: 5;
+}
+
+.overlay-content {
+  position: relative;
+  top: 50px;;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a.title {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.overlay a.title:hover {
+  text-decoration: underline;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a.pa {
+  color: #EA9A69;
+  font-size: 22px;
+}
+
+.overlay a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay a.closebtn:hover {
+  text-decoration: none;
+}
+
+.overlay .content {
+  width: 100%;
+}
+
+.overlay .links {
+  margin: 30px;
+  text-align: center;
+}
+.overlay .links a {
+  margin: 20px;
+}
+
+.overlay .circle-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.overlay .circle {
+  height: 140vh;
+  width: 140vh;
+  border-radius: 50%;
+  background-color: #EFEFEF;
+  z-index: -1;
+  text-align: center;
+  margin: auto;
+  margin-top: -20vh;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay .content {
+    margin: 0;
+  }
+  .overlay .links {
+    display: block;
+  }
+}

@@ -39,7 +39,7 @@ d3.csv("cockapooChart.csv", function(error, data) {
 
   // format the data
   data.forEach(function(d) {
-    d.Total = +d.sales;
+    d.Total = +d.Total;
   });
 
   // Scale the range of the data in the domains

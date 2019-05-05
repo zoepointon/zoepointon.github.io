@@ -139,6 +139,7 @@ img {
 
 
 
+
 .title-block {
   height: 100vh;
   overflow: hidden;
@@ -699,6 +700,30 @@ a.unactive {
 
 
 
+
+
+
+
+
+
+
+
+.tick line {
+  visibility: hidden;
+}
+
+.yaxis path {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.xaxis path {
+  visibility: hidden;
+}
+
+.label {
+  font-weight: 700;
+}
 
 
 

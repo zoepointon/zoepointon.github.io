@@ -44,8 +44,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 left">
-            <h2>#1</h2>
-            <h1>French Bulldog</h1>
+            <h2>#1 French Bulldog</h2>
+            <h1>Fashion Breeding</h1>
             <p>Famous across social media, a French Bulldog is a fashionable choice in companion. But is breeding a dog for aesthetics in the best interest of the animal?</p>
           </div>
           <div class="col-md-7 center">
@@ -176,7 +176,7 @@
     var svg = d3.select("#chart").append("svg")
         .attr("class", "bubble")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 960 500");
+        .attr("viewBox", "0 0 960 550");
 
     d3.csv("frenchieChart.csv", function(error, data){
         if (error) throw error;
@@ -212,7 +212,7 @@
           .attr('class', 'label')
           .attr("x","250")
           .attr("y","100")
-          .text("Recognised")
+          .text("Recognised Colours")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
@@ -238,67 +238,104 @@
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "fawn"; })
           .style("fill", "#F0E6CE")
-          .attr("cx","250")
-          .attr("cy", "350");
+          .attr("cx","270")
+          .attr("cy", "360");
 
         svg.append("text")
-          .attr("x","250")
-          .attr("y","360")
+          .attr("x","270")
+          .attr("y","250")
           .text("Fawn")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px");
+          svg.append("text")
+            .attr("x","270")
+            .attr("y","370")
+            .text("809")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px");
 
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "pied"; })
           .style("fill", "#fff")
-          .attr("cx","380")
-          .attr("cy", "200");
+          .attr("cx","390")
+          .attr("cy", "220");
 
         svg.append("text")
-          .attr("x","380")
-          .attr("y","208")
+          .attr("x","390")
+          .attr("y","163")
           .text("Pied")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px");
+          svg.append("text")
+            .attr("x","390")
+            .attr("y","228")
+            .text("175")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px");
 
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "brindle"; })
           .style("fill", "#000000")
-          .attr("cx","130")
-          .attr("cy", "200");
+          .attr("cx","120")
+          .attr("cy", "240");
 
         svg.append("text")
-          .attr("x","130")
-          .attr("y","208")
+          .attr("x","120")
+          .attr("y","178")
           .text("Brindle")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px")
-          .style("fill","#fff");
+          .style("fill","#000");
+          svg.append("text")
+            .attr("x","120")
+            .attr("y","248")
+            .text("223")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px")
+            .style("fill","#fff");
 
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "blue"; })
           .style("fill", "#9FB0B4")
           .attr("cx","690")
-          .attr("cy", "340");
+          .attr("cy", "380");
 
         svg.append("text")
           .attr("x","690")
-          .attr("y","350")
+          .attr("y","210")
           .text("Blue")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px");
+          svg.append("text")
+            .attr("x","690")
+            .attr("y","390")
+            .text("2245")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px");
 
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "lilac"; })
@@ -308,29 +345,47 @@
 
         svg.append("text")
           .attr("x","580")
-          .attr("y","110")
+          .attr("y","20")
           .text("Lilac")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px");
+          svg.append("text")
+            .attr("x","580")
+            .attr("y","110")
+            .text("447")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px");
 
         d3.selectAll("circle")
           .filter(function(d) { return d.data["Colour"] == "tan"; })
           .style("fill", "#A56C43")
           .attr("cx","860")
-          .attr("cy", "100");
+          .attr("cy", "130");
 
         svg.append("text")
           .attr("x","860")
-          .attr("y","110")
+          .attr("y","20")
           .text("Tan")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
           .style("text-transform", "capitalize")
           .style("letter-spacing", "2px")
           .style("font-size", "20px");
+          svg.append("text")
+            .attr("x","860")
+            .attr("y","140")
+            .text("863")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "20px");
 
         d3.selectAll("text")
           .filter(function(d) { return d.data["Colour"] == "brindle"; })

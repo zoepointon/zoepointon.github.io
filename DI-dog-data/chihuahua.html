@@ -45,9 +45,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 left">
-            <h2>#2</h2>
-            <h1>Chihuahua</h1>
-            <p>Being popular is not always good for a breed. The most popular breeds tend to be desirable target for puppy farming.</p>
+            <h2>#2 Chihuahua</h2>
+            <h1>Puppy Farms</h1>
+            <p>Being popular is not always good for a breed. Popular breeds like Chihuahuas tend to be desirable target for puppy farming.</p>
           </div>
           <div class="col-md-7 center">
             <img src="img/chihuahua-2.png">
@@ -121,7 +121,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 center">
-            <h2>Advertisers: Frequency and Price</h2>
+            <h2>Chihuahuas Breeders Ad Frequency and Prices</h2>
           </div>
           <div class="col-md-12 center">
             <div id="chart"></div>
@@ -204,12 +204,24 @@
       x.domain(d3.extent(data, function(d) { return d.Frequency; }));
       y.domain([0, d3.max(data, function(d) { return d.AveragePrice; })]);
 
-      // rectangle
+      // under 5
       svg.append("rect")
         .attr("x","0")
         .attr("y","-30")
         .attr("width","27.5")
         .attr("height","1")
+        .style("fill","#000");
+      svg.append("rect")
+        .attr("x","0")
+        .attr("y","-34")
+        .attr("width","1")
+        .attr("height","10")
+        .style("fill","#000");
+      svg.append("rect")
+        .attr("x","27.5")
+        .attr("y","-34")
+        .attr("width","1")
+        .attr("height","10")
         .style("fill","#000");
 
       svg.append("text")

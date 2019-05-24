@@ -465,6 +465,15 @@ ul li {
   margin-bottom: 50px;
 }
 
+.view-all-work {
+  margin-bottom: 150px;
+}
+.view-all-work .center {
+  text-align: center;
+}
+.view-all-work button {
+  width: 160px;
+}
 
 
 
@@ -878,13 +887,24 @@ div.top-portfolio h1 {
   margin-top: 120px;
 }
 
-.project-breadcrumb a, .project-nav a {
+.project-breadcrumb input, .project-nav a {
   font-family: 'Work', sans-serif;
   text-transform: lowercase;
   font-weight: 300;
   color: #bfbfbf;
   font-size: 16px;
   letter-spacing: 2px;
+  background-color: transparent;
+  border: none;
+}
+
+.project-breadcrumb input:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project-breadcrumb input:focus {
+  outline: none;
 }
 
 .project-title {
@@ -929,6 +949,7 @@ div.top-portfolio h1 {
 
 .around-prototype, .panicapp-prototype, .binkybear-video {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .around-prototype iframe {
@@ -937,4 +958,8 @@ div.top-portfolio h1 {
   background-color: #e4e4e4;
   border-radius: 42px;
   margin-top: 50px;
+}
+
+.storyboard .row {
+  margin-bottom: 30px;
 }

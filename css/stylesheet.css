@@ -100,7 +100,7 @@ div.home-top .myVideo {
   min-width: 100%;
   min-height: 100vh;
   float: right;
-  opacity: 0.8;
+  opacity: 0.9;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   /*-webkit-filter: grayscale(100%) brightness(100%); /* Safari 6.0 - 9.0 */
@@ -115,7 +115,7 @@ div.home-top, div.about-top {
   height: 100vh;
 }
 
-div.panicapp, div.cameo, div.around, div.bio, div.icons {
+div.panicapp, div.cameo, div.around, div.icons {
   height: 100vh;
 }
 
@@ -129,7 +129,7 @@ div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo, div.hope .ho
   min-width: 100%;
   min-height: 100vh;
   float: right;
-  opacity: 0.8;
+  opacity: 0.9;
   object-fit: cover;
   /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
   /*filter: grayscale(100%) brightness(110%);*/
@@ -186,28 +186,17 @@ div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
 
 
 
-body.about .timeline-heading h4 {
-  color: #000;
-  font-weight: 300;
-}
 
-.timeline-about h1 {
+
+
+.experience {
   margin-top: 100px;
-  margin-bottom: 30px;
-}
-
-.bold-timeline-text {
-  font-weight: 400;
-}
-
-div.experience {
   margin-bottom: 100px;
 }
 
-
-
-
-
+.experience h3, .about-uni h3 {
+  margin-top: 20px;
+}
 
 
 
@@ -228,12 +217,12 @@ div.experience {
    height: 100%;
    width: 0;
    position: fixed;
-   z-index: 2;
    top: 0;
    left: 0;
    background-color: #fff;
    overflow-x: hidden;
    transition: 0.5s;
+   z-index: 5;
 }
 
 .overlay-content {
@@ -266,11 +255,7 @@ div.experience {
 }
 
 .overlay .closebtn {
-   position: absolute;
-   top: 20px;
-   float: left;
-   text-align: left;
-   font-size: 60px;
+  font-size: 70px;
 }
 
 .overlay-nav-container {
@@ -310,69 +295,53 @@ div.experience {
 
 
 
-.nav-container {
-  height: 45px;
-  line-height: 45px;
+
+nav {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
   position: fixed;
-  margin-top: 40px;
-  z-index: 1;
+  z-index: 4;
+  background-color: rgba(255,255,255, 0.6);;
+  opacity: 0.95;
 }
 
-.nav-button svg, .nav-mail svg {
-  height: 45px;
+nav span.burger {
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+  line-height: 60px;
+  z-index: 10;
 }
 
-.nav-button a {
-  padding: 0;
-}
-
-.nav-mail {
-  text-align: right;
-}
-
-.st0{fill:#000;}
-
-.nav-logo {
-  text-align: center;
-}
-
-.nav-logo a {
+nav div.title a {
+  float: left;
+  line-height: 60px;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 200;
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 4px;
   color: #000;
-}
-
-.nav-logo a:hover {
-  border-bottom: solid 2px #000;
-  text-decoration: none;
-}
-
-.nav-container svg {
-  transition: ease 1s;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
 }
 
 
 @media screen and (max-width: 575px) {
-  .nav-button {
-    position: absolute;
-    text-align: right;
+  nav div.title a {
+    font-size: 24px;
   }
-  .nav-mail {
-    position: absolute;
-    text-align: left;
-    padding-right: 0;
-    float: left;
-  }
-  .nav-mail svg {
-    text-align: right;
+  nav span.burger {
+    font-size: 20px;
+    cursor: pointer;
     float: right;
-    position: absolute;
-  }
-  .nav-logo a {
-    font-size: 28px;
+    margin-right: 10px;
+    line-height: 60px;
+    z-index: 10;
   }
 }
 
@@ -420,6 +389,27 @@ h2 {
   color: #bfbfbf;
   font-size: 16px;
   letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Work', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-family: 'Work', sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+h4 .bold {
+  font-weight: 500;
 }
 
 ul {
@@ -501,28 +491,13 @@ div.top-text h1, div.top-text p  {
   height: 100vh;
 }
 
-.panicapp .row, .cameo .row, .bio .row, .icons .row {
-  height: 100vh;
-}
-
-div.panicapp-text, div.cameo-text, div.bio p, div.icon {
-  position: inherit;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-div.top-text p, div.panicapp-text p, div.cameo-text p, div.hope-text p, div.about-top-text p {
+div.top-text p, div.hope-text p, div.about-top-text p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-div.panicapp img, div.cameo img {
-  width: 100%;
-  position: inherit;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 10px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4)
+div.bio {
+  margin: 200px 0;
 }
 
 div.bio p {
@@ -534,11 +509,14 @@ div.bio p {
   margin-top: 20px;
 }
 
-.cameo img, .panicapp img {
-  transition: ease 1s;
+.work {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
+.work h1 {
+  margin-bottom: 20px;
+}
 
 
 
@@ -644,22 +622,22 @@ div.top-portfolio h1 {
   margin-bottom: 20px;
 }
 
-.portfolio img {
+.item img {
   width: 100%;
 }
 
-.portfolio .item {
+.item {
   text-align: center;
   margin-bottom: 80px;
   transition: ease 0.5s;
 }
 
-.portfolio .item h1 {
+.item h1 {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.portfolio .item a:hover, .portfolio .item a:focus {
+.item a:hover, .item a:focus {
   opacity: 0.8;
   transition: ease 0.5s;
   text-decoration: none;
@@ -827,18 +805,6 @@ div.top-portfolio h1 {
 
 
 @media screen and (max-width: 768px) {
-  .nav-mail svg {
-    display: none;
-  }
-
-  .nav-container {
-    margin-top: 20px;
-  }
-
-  .nav-container .nav-logo a {
-    font-size: 30px;
-  }
-
   div.panicapp-text, div.cameo-text, div.around-text, div.icon, div.binkybear-text, div.lomax-text {
     position: inherit;
     top: auto;
@@ -859,17 +825,20 @@ div.top-portfolio h1 {
     display: none;
   }
 
-  div.panicapp, div.cameo, div.around, div.bio, div.icons, div.binkybear, div.lomax {
+  div.panicapp, div.cameo, div.around, div.icons, div.binkybear, div.lomax {
     height: auto;
   }
 
-  .panicapp .row, .cameo .row,  .around .row, .bio .row, .icons .row, .binkybear .row, .lomax .row {
+  .panicapp .row, .cameo .row,  .around .row, .icons .row, .binkybear .row, .lomax .row {
     height: auto;
+  }
+
+  div.bio {
+    margin: 100px 0;
   }
 
   div.bio p {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    font-size: 20px;
   }
 }
 
@@ -880,36 +849,9 @@ div.top-portfolio h1 {
 
 
 
-
-
-.project-breadcrumb {
-  text-align: left;
-  margin-top: 120px;
-}
-
-.project-breadcrumb input, .project-nav a {
-  font-family: 'Work', sans-serif;
-  text-transform: lowercase;
-  font-weight: 300;
-  color: #bfbfbf;
-  font-size: 16px;
-  letter-spacing: 2px;
-  background-color: transparent;
-  border: none;
-}
-
-.project-breadcrumb input:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.project-breadcrumb input:focus {
-  outline: none;
-}
-
 .project-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 150px;
   margin-bottom: 80px;
 }
 

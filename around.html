@@ -22,20 +22,7 @@
   <body class="project">
     <div id="myNav" class="overlay">
       <div class="overlay-content">
-        <div class="container-fluid overlay-nav-container">
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1 nav-logo">
-            </div>
-            <div class="col-sm-1 nav-button">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-                <polygon class="st0" points="19.4,10.4 17.6,9.6 12.5,20.2 7.4,9.6 5.6,10.4 11.4,22.5 5.6,34.6 7.4,35.4 12.5,24.8 17.6,35.4
-                	19.4,34.6 13.6,22.5 "/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="container-fluid">
           <div class="row overlay-links">
             <div class="col-sm-12">
@@ -48,37 +35,10 @@
       </div>
     </div>
 
-    <div class="container-fluid nav-container">
-      <div class="row">
-        <div class="col-sm-1 nav-mail">
-          <a href="mailto:zoepointon123@gmail.com?Subject=Hello%20again" target="_top">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 45" style="enable-background:new 0 0 40 45;" xml:space="preserve">
-              <path id="nav-icon-color-one" class="st0" d="M8.5,9v27h23V9H8.5z M28.2,11L20,20.9L11.8,11H28.2z M10.5,34V12.6L20,24.1l9.5-11.5V34H10.5z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col-sm-10 nav-logo">
-          <a href="index.html" id="nav-color">Zoe Ellen Pointon</a>
-        </div>
-        <div class="col-sm-1 nav-button">
-          <span style="cursor:pointer;" onclick="openNav()">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-            	<rect id="nav-icon-color-two" class="st0" x="6.5" y="21.5" class="st0" width="14" height="2"/>
-            	<rect id="nav-icon-color-three" class="st0" x="6.5" y="9" class="st0" width="14" height="2"/>
-          		<rect id="nav-icon-color-four" class="st0" x="6.5" y="34" class="st0" width="14" height="2"/>
-            </svg>
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class=" col-md-10 offset-md-1 project-breadcrumb">
-          <input type="button" value="back" onclick="history.back()">
-        </div>
-      </div>
-    </div>
+    <nav>
+      <div class="title"><a href="index.html">Zoe Ellen Pointon</a></div>
+      <span class="burger" onclick="openNav()">&#9776;</span>
+    </nav>
 
     <div class="container-fluid">
       <div class="row">

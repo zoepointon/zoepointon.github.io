@@ -23,20 +23,7 @@
   <body class="about">
     <div id="myNav" class="overlay">
       <div class="overlay-content">
-        <div class="container-fluid overlay-nav-container">
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1 nav-logo">
-            </div>
-            <div class="col-sm-1 nav-button">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-                <polygon class="st0" points="19.4,10.4 17.6,9.6 12.5,20.2 7.4,9.6 5.6,10.4 11.4,22.5 5.6,34.6 7.4,35.4 12.5,24.8 17.6,35.4
-                	19.4,34.6 13.6,22.5 "/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="container-fluid">
           <div class="row overlay-links">
             <div class="col-sm-12">
@@ -49,190 +36,78 @@
       </div>
     </div>
 
-    <div class="container-fluid nav-container">
-      <div class="row">
-        <div class="col-sm-1 nav-mail">
-          <a href="mailto:zoepointon123@gmail.com?Subject=Hello%20again" target="_top">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 45" style="enable-background:new 0 0 40 45;" xml:space="preserve">
-              <path id="nav-icon-color-one" class="st0" d="M8.5,9v27h23V9H8.5z M28.2,11L20,20.9L11.8,11H28.2z M10.5,34V12.6L20,24.1l9.5-11.5V34H10.5z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col-sm-10 nav-logo">
-          <a href="index.html" id="nav-color">Zoe Ellen Pointon</a>
-        </div>
-        <div class="col-sm-1 nav-button">
-          <span style="cursor:pointer;" onclick="openNav()">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-              <rect id="nav-icon-color-two" class="st0" x="6.5" y="21.5" class="st0" width="14" height="2"/>
-              <rect id="nav-icon-color-three" class="st0" x="6.5" y="9" class="st0" width="14" height="2"/>
-              <rect id="nav-icon-color-four" class="st0" x="6.5" y="34" class="st0" width="14" height="2"/>
-            </svg>
-          </span>
-        </div>
-      </div>
-    </div>
+    <nav>
+      <div class="title"><a href="index.html">Zoe Ellen Pointon</a></div>
+      <span class="burger" onclick="openNav()">&#9776;</span>
+    </nav>
 
     <div class="container-fluid about-top">
       <div class="row">
-        <div class="col-md-6 about-top-image-container about-top-myvideo-mask video-bg">
+        <div class="col-md-7 about-top-image-container about-top-myvideo-mask video-bg">
           <div class="about-top-image"></div>
           <video autoplay muted loop class="about-top-myVideo">
             <source src="img/event.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
-        <div class="col-md-4 offset-md-1">
+        <div class="col-md-3 offset-md-1">
           <div class="about-top-text">
-            <h1>UX Designer & Analyst</h1>
+            <h1>UX Analyst</h1>
             <p>Design Informatics, Masters student at the University of Edinburgh. <span class="highlight-text">Two years design experience</span> working within the Tech Industry. Graduated from the University of Winchester with a <span class="highlight-text">first class honours</span>, in Digital Media Design.</p>
-            <button type="submit" onclick="window.open('img/ZoeEllenPointon-Resume.pdf')" class="pulse-button">see CV</button>
+            <button type="submit" onclick="window.open('img/ZoeEllenPointon-Resume.pdf')" class="pulse-button">download cv</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid icons">
+    <div class="container experience">
       <div class="row">
-        <div class="col-xs-12 col-md-3 offset-md-1 center-svg">
-          <div class="icon">
-            <svg class="research-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <g class="mag">
-                <path class="mag-glass" d="M206,99c0-29.3-23.7-53-53-53s-53,23.7-53,53c0,26.4,19.3,48.2,44.5,52.3v26.9h17v-26.9C186.7,147.2,206,125.4,206,99zM153,135c-19.9,0-36-16.1-36-36c0-19.9,16.1-36,36-36s36,16.1,36,36C189,118.9,172.9,135,153,135z"/>
-                <rect class="mag-handle" x="139.5" y="170.7" class="st0" width="27" height="88.3"/>
-              </g>
-            </svg>
-            <h1>Analyse</h1>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4 center-svg">
-          <div class="icon">
-            <svg class="design-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <line class="pencil-line" x1="152.5" y1="48.5" x2="152.5" y2="139.5"/>
-              <g class="pencil">
-                <polygon class="black-pencil" points="180,245 125.4,245 125.4,84.3 142.9,59.1 152.7,52 162.2,58.7 180,84.3 	"/>
-                <rect class="pencil-rubber" x="125.4" y="243.3" width="54.6" height="17.7"/>
-                <polygon class="pencil-point" points="163.8,61 152.7,45 141.6,61 	"/>
-              </g>
-            </svg>
-            <h1>Design</h1>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-3 center-svg">
-          <div class="icon">
-            <svg class="develop-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <g class="red-cog">
-                <path class="red-cog-outside" d="M185.1,142.3l11-11l-6.4-7.8c3.2-4.8,5.3-10,6.4-15.5l10-1V91.4l-10-1c-1.1-5.4-3.2-10.7-6.4-15.5l6.4-7.8 l-11-11l-7.8,6.4c-4.8-3.2-10-5.3-15.5-6.4l-1-10h-15.6l-1,10c-5.4,1.1-10.7,3.2-15.5,6.4l-7.8-6.4l-11,11l6.4,7.8 c-3.2,4.8-5.3,10-6.4,15.5l-10,1l0,15.6l10,1c1.1,5.4,3.2,10.7,6.4,15.5l-6.4,7.8l11,11l7.8-6.4c4.8,3.2,10,5.3,15.5,6.4l1,10 l15.6,0l1-10c5.4-1.1,10.7-3.2,15.5-6.4L185.1,142.3z M131.6,120.5c-11.8-11.8-11.8-30.9,0-42.7c11.8-11.8,30.9-11.8,42.7,0 c11.8,11.8,11.8,30.9,0,42.7C162.6,132.3,143.4,132.3,131.6,120.5z"/>
-              </g>
-              <path class="black-cog" d="M205.1,193.7l-6-14.4l-9.6,2.9c-3.2-4.8-7.3-8.7-11.9-11.8l2.9-9.7l-14.4-6l-4.8,8.9c-5.4-1.1-11.1-1.1-16.8,0l-4.8-8.9 l-14.4,6l2.9,9.6c-4.8,3.2-8.7,7.3-11.8,11.9l-9.7-2.9l-6,14.4l8.9,4.8c-1.1,5.4-1.1,11.1,0,16.8l-8.9,4.8l6,14.4l9.6-2.9 c3.2,4.8,7.3,8.7,11.9,11.8l-2.9,9.7l14.4,6l4.8-8.9c5.4,1.1,11.1,1.1,16.8,0l4.8,8.9l14.4-6l-2.9-9.6c4.8-3.2,8.7-7.3,11.8-11.9 l9.7,2.9l6-14.4l-8.9-4.8c1.1-5.4,1.1-11.1,0-16.8L205.1,193.7z M157.6,217.9c-6.1,2.5-13.1-0.4-15.6-6.5 c-2.5-6.1,0.4-13.1,6.5-15.6c6.1-2.5,13.1,0.4,15.6,6.5C166.6,208.4,163.7,215.4,157.6,217.9z"/>
-            </svg>
-            <h1>Test</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid edi">
-      <div class="row">
-        <div class="col-md-6 edi-image-container edi-myVideo-mask video-bg">
-          <div class="edi-image"></div>
-          <video autoplay muted loop class="edi-myVideo">
-            <source src="img/arthers-seat_1.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
-        <div class="col-md-4 offset-md-1">
-          <div class="edi-text">
-            <h1>University of Edinburgh, Design Informatics</h1>
-            <p>Recently started studying for a masters in <span class="highlight-text">Design Informatics</span> at the University of Edinburgh. Design Informatics is teaching me a <span class="highlight-text">data driven approach to design</span>. It is also showing me how to design more <span class="highlight-text">logical user experiences</span>. I will graduate in 2019.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid experience">
-      <div class="row">
-        <div class="col-xs-12 col-md-10 offset-md-1 timeline-about">
+        <div class="col-md-12">
           <h1>Experience</h1>
-          <ul class="timeline">
-            <li>
-              <div class="timeline-badge">
-                <a><i class="fa fa-circle" id=""></i></a>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>UX/UI Designer<span class="bold-timeline-text"> TruDigital</span></h4>
-                </div>
-                <div class="timeline-body">
-                  <p>Formerly part of CDG. My role in the company was to design and build websites for our SME clients using WordPress. I also took a lead role in streamlining the design/development process for the ‘affordable’ website offering. Duties include; client meetings, creating user journeys, wireframes, style guides, design mockups, prototypes, building websites using WordPress and conducting focus groups.</p>
-                </div>
-                <div class="timeline-footer">
-                  <p class="text-right">April 2018 - July 2018</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="timeline-inverted">
-              <div class="timeline-badge">
-                <a><i class="fa fa-circle invert" id=""></i></a>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Graduate Designer<span class="bold-timeline-text"> CDG</span></h4>
-                </div>
-                <div class="timeline-body">
-                  <p>After completing my degree I started full time work at CDG as a Graduate Designer. With this came new challenges and greater responsibility, such as; involvement in client and sales meetings, preparing and conducting user focus groups and time management. As well as working on client projects, I also got the opportunity to work within product teams, creating and refining digital products using agile methodologies. Duties include; creating user journeys, wireframes, style guides, design mockups, prototypes, writing research reports, conducting focus groups, taking part in client meetings and creating email templates.</p>
-                </div>
-                <div class="timeline-footer">
-                  <p class="text-right">May 2017 - April 2018</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="timeline-badge">
-                <a><i class="fa fa-circle" id=""></i></a>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Digital Design Intern<span class="bold-timeline-text"> CDG</span></h4>
-                </div>
-                <div class="timeline-body">
-                  <p>During my last year at university I got the opportunity to work within industry alongside my study. Working at CDG gave me valuable insight into the Tech Industry. It also allowed me to develop my design and problem solving skills and gain new experience working with clients in a professional environment. Duties include; designing icons, assisting in web development, designing web mockups and creating print collateral.</p>
-                </div>
-                <div class="timeline-footer">
-                  <p class="text-right">May 2016 - April 2017</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="clearfix no-float"></li>
-          </ul>
+        </div>
+        <div class="col-md-7">
+          <h3>April 2018 - July 2018</h3>
+          <h4>UX/UI Designer<span class="highlight-text"> TruDigital</span></h4>
+          <p>Formerly part of CDG. My role in the company was to design and build websites for our SME clients using WordPress. I also took a lead role in streamlining the design/development process for the ‘affordable’ website offering.</p>
+        </div>
+        <div class="col-md-7">
+          <h3>May 2017 - April 2018</h3>
+          <h4>Graduate Designer<span class="highlight-text"> CDG</span></h4>
+          <p>After graduating I joined CDG as a graduate designer. My role expanded to running client meetings, preparing and conducting focus groups and user testing. As well as working on client projects, I also got the opportunity to work within product teams, creating and refining digital products using agile.</p>
+        </div>
+        <div class="col-md-7">
+          <h3>May 2016 - April 2017</h3>
+          <h4>Digital Design Intern<span class="highlight-text"> CDG</span></h4>
+          <p>During my last year at university I got the opportunity to work alongside my study. It allowed me to develop my design and problem solving skills and gain new experience creating design mockups and prototypes for clients.</p>
         </div>
       </div>
     </div>
 
     <div class="container-fluid about-uni">
       <div class="row">
-        <div class="col-md-6 uni-image-container about-uni-myvideo-mask video-bg">
+        <div class="col-md-7 uni-image-container about-uni-myvideo-mask video-bg">
           <div class="uni-image"></div>
           <video autoplay muted loop class="about-uni-myVideo">
             <source src="img/graduation_2.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
-        <div class="col-md-4 offset-md-1">
+        <div class="col-md-3 offset-md-1">
           <div class="about-uni-text">
-            <h1>University of Winchester, Digital Media Design</h1>
-            <p>Graduated with a <span class="highlight-text">First Class Honours</span> degree. During the course I learnt about a variety of different topics via lectures, writing reports and completing projects. Modules include; <span class="highlight-text">UX/UI design</span>, web development, graphic design, animation, motion graphics, social media, <span class="highlight-text">agile</span> and waterfall project management, business and research.</p>
+            <h3>September 2018 - August 2019</h3>
+            <h4>Design Informatics<span class="highlight-text"> University of Edinburgh</span></h4>
+            <p>Predicted Grade: Merit</p>
+            <h3>September 2014 - May 2017</h3>
+            <h4>Digital Media Design<span class="highlight-text"> University of Winchester</span></h4>
+            <p>Grade: First</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid skillset">
+    <div class="container skillset">
       <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-2 offset-md-1">
+        <div class="col-xs-6 col-sm-6 col-md-3">
           <h1>Design</h1>
           <ul>
             <li>Photoshop</li>
@@ -241,29 +116,46 @@
             <li>After Effects</li>
             <li>Sketch</li>
             <li>Invision</li>
-            <li>HTML</li>
-            <li>CSS</li>
           </ul>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-2 offset-md-1">
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <h1>UX</h1>
+          <ul>
+            <li>Personas</li>
+            <li>User Journeys</li>
+            <li>Prototyping</li>
+            <li>User Testing</li>
+            <li>Focus Groups</li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
           <h1>Analytics</h1>
           <ul>
             <li>Python</li>
-            <li>SQL</li>
+            <li>D3</li>
             <li>Excel</li>
             <li>Google Analytics</li>
           </ul>
         </div>
-        <div class="col-sm-12 col-md-4 offset-md-1">
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <h1>Dev</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
           <h1>Awards</h1>
           <p><span class="highlight-text">Transmedia 2017 Pitch a Project Winner</span> The University of Winchester</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
           <h1>Certifications</h1>
           <p><span class="highlight-text">The Online Marketing Fundamentals</span> Google</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 center">
-          <button type="submit" onclick="window.open('img/ZoeEllenPointon-Resume.pdf')" class="pulse-button">see CV</button>
+          <button type="submit" onclick="window.open('img/ZoeEllenPointon-Resume.pdf')" class="pulse-button">download cv</button>
         </div>
       </div>
     </div>

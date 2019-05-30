@@ -33,20 +33,7 @@
   <body class="home">
     <div id="myNav" class="overlay">
       <div class="overlay-content">
-        <div class="container-fluid overlay-nav-container">
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1 nav-logo">
-            </div>
-            <div class="col-sm-1 nav-button">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-                <polygon class="st0" points="19.4,10.4 17.6,9.6 12.5,20.2 7.4,9.6 5.6,10.4 11.4,22.5 5.6,34.6 7.4,35.4 12.5,24.8 17.6,35.4
-                	19.4,34.6 13.6,22.5 "/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="container-fluid">
           <div class="row overlay-links">
             <div class="col-sm-12">
@@ -59,29 +46,10 @@
       </div>
     </div>
 
-    <div class="container-fluid nav-container">
-      <div class="row">
-        <div class="col-sm-1 nav-mail">
-          <a href="mailto:zoepointon123@gmail.com?Subject=Hello%20again" target="_top">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 45" style="enable-background:new 0 0 40 45;" xml:space="preserve">
-              <path id="nav-icon-color-one" class="st0" d="M8.5,9v27h23V9H8.5z M28.2,11L20,20.9L11.8,11H28.2z M10.5,34V12.6L20,24.1l9.5-11.5V34H10.5z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col-sm-10 nav-logo">
-          <a href="index.html" id="nav-color">Zoe Ellen Pointon</a>
-        </div>
-        <div class="col-sm-1 nav-button">
-          <span style="cursor:pointer;" onclick="openNav()">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 45" style="enable-background:new 0 0 25 45;" xml:space="preserve">
-              <rect id="nav-icon-color-two" class="st0" x="6.5" y="21.5" class="st0" width="14" height="2"/>
-              <rect id="nav-icon-color-three" class="st0" x="6.5" y="9" class="st0" width="14" height="2"/>
-              <rect id="nav-icon-color-four" class="st0" x="6.5" y="34" class="st0" width="14" height="2"/>
-            </svg>
-          </span>
-        </div>
-      </div>
-    </div>
+    <nav>
+      <div class="title"><a href="index.html">Zoe Ellen Pointon</a></div>
+      <span class="burger" onclick="openNav()">&#9776;</span>
+    </nav>
 
     <div class="container-fluid home-top">
       <div class="row">
@@ -105,27 +73,44 @@
     <div class="container-fluid bio">
       <div class="row">
         <div class="col-xs-12 col-md-8 offset-md-2">
-          <p class="big-paragraph">Studying for a Masters in Design Informatics at The University of Edinburgh. <span class="highlight-text">Two years design experience</span> working within the Tech Industry. Graduated from the University of Winchester with a <span class="highlight-text">first class honours</span>, in Digital Media Design.</p>
+          <p class="big-paragraph">Design Informatics, Masters student at the University of Edinburgh. <span class="highlight-text">Two years design experience</span> working within the Tech Industry. Graduated from the University of Winchester with a <span class="highlight-text">first class honours</span> in Digital Media Design.
+          <br>Looking for a new oppertunity in <span class="highlight-text">user experience analytics</span>.
         </div>
       </div>
     </div>
 
-    <div class="container-fluid panicapp">
+    <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-5 offset-md-1">
-          <img src="img/panicapp-home.png">
+        <div class="col-md-12 work">
+          <h1>View my work</h1>
+          <p>Take a look at some of the projects I have worked on.</p>
         </div>
-        <div class="col-xs-12 col-md-4 offset-md-1">
-          <div class="panicapp-text">
+        <div class="col-xs-6 col-md-6 item">
+          <a href="dog-data.html">
+            <img src="img/dog-data-home.jpg">
+            <h1>Guide to Buying a Dog Online</h1>
+            <h2>Research, UX, Focus Group, UI, Illustration, Data, D3</h2>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-6 item">
+          <a href="panicapp.html">
+            <img src="img/panicapp-home.jpg">
             <h1>PanicApp</h1>
-            <p>PanicApp is a personal safety alert system. The brief was to design a mobile application that sends emergency alerts...</p>
-            <button onclick="location.href='panicapp.html'" class="pulse-button">read more</button><a class="secondary-button" target="_blank" href="https://panicapp.co.uk/">visit site</a>
-          </div>
+            <h2>Research, UX, UI, Protyping</h2>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid icons">
+    <div class="container-fluid view-all-work">
+      <div class="row">
+        <div class="col-md-12 center">
+          <button onclick="location.href='portfolio.html'" class="pulse-button">view more</button>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="container-fluid icons">
       <div class="row">
         <div class="col-xs-12 col-md-3 offset-md-1 center-svg">
           <div class="icon">
@@ -163,25 +148,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-
-    <div class="container-fluid cameo">
-      <div class="row">
-        <div class="col-xs-12 col-md-5 offset-md-1">
-          <img src="img/cameo-home.png">
-        </div>
-        <div class="col-xs-12 col-md-4 offset-md-1">
-          <div class="cameo-text">
-            <h1>Cameo</h1>
-            <p>Cameo Day Centres is a charity that offers day care for people with dementia. The brief was to create a brochure website...</p>
-            <button onclick="location.href='cameo.html'" class="pulse-button">read more</button><a class="secondary-button" target="_blank" href="http://cameodaycentres.org.uk/">visit site</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+    </div>-->
 
     <div class="container-fluid hope">
       <div class="row">

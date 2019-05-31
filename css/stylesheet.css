@@ -302,7 +302,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 4;
-  background-color: rgba(255,255,255, 0.6);;
+  background-color: rgba(255,255,255, 0.98);;
   opacity: 0.95;
 }
 
@@ -532,8 +532,8 @@ div.bio p {
 a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  letter-spacing: 4px;
-  text-transform: lowercase;
+  letter-spacing: 3px;
+  text-transform: capitalize;
   color: #000;
   margin-left: 40px;
   transition: ease 0.3s;
@@ -544,8 +544,8 @@ a.secondary-button {
   height: 40px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  letter-spacing: 4px;
-  text-transform: lowercase;
+  letter-spacing: 3px;
+  text-transform: capitalize;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -567,8 +567,8 @@ a.secondary-button {
   height: 40px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  letter-spacing: 4px;
-  text-transform: lowercase;
+  letter-spacing: 3px;
+  text-transform: capitalize;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -847,44 +847,52 @@ div.top-portfolio h1 {
 
 
 
-
+.project ul {
+  margin-top: 20px;
+}
 
 .project-title {
-  text-align: center;
-  margin-top: 150px;
+  text-align: left;
+  margin-top: 120px;
   margin-bottom: 80px;
 }
 
-.project-title h1 {
+.project .project-title h1 {
   margin-bottom: 20px;
 }
 
-.project-title h2 {
-  margin-bottom: 50px;
+.project .project-title h2 {
+  margin-bottom: 30px;
 }
 
-.project-title p {
-  margin-bottom: 50px;
+.project .project-title p {
+  margin-bottom: 30px;
 }
 
-.project-window img {
+.project img {
   width: 100%;
+  margin: 15px 0;
 }
 
-.project-nav {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.project h1 {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-.project-nav a.next {
-  float: right;
+.project p {
+  margin: 15px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .project-breadcrumb {
-    text-align: center;
-    margin-top: 100px;
-  }
+.project .buttons {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+
+.low-light {
+  background-color: #FAFAFA;
+  padding: 40px 0;
 }
 
 

@@ -316,7 +316,6 @@ nav span.burger {
 }
 
 nav div.title a {
-  float: left;
   line-height: 60px;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -325,8 +324,14 @@ nav div.title a {
   letter-spacing: 4px;
   color: #000;
   width: 100%;
-  position: absolute;
+  z-index: -1;
+}
+
+nav div.title {
+  width: 100%;
   text-align: center;
+  height: 60px;
+  position: absolute;
   z-index: -1;
 }
 

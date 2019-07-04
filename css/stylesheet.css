@@ -100,7 +100,7 @@ div.home-top .myVideo {
   min-width: 100%;
   min-height: 100vh;
   float: right;
-  opacity: 0.9;
+  opacity: 1;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   /*-webkit-filter: grayscale(100%) brightness(100%); /* Safari 6.0 - 9.0 */
@@ -129,7 +129,7 @@ div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo, div.hope .ho
   min-width: 100%;
   min-height: 100vh;
   float: right;
-  opacity: 0.9;
+  opacity: 1;
   object-fit: cover;
   /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
   /*filter: grayscale(100%) brightness(110%);*/
@@ -145,6 +145,17 @@ div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
   height: 400px;
   min-height: 200px;
   position: relative;
+}
+
+
+.hope i {
+  font-size: 22px;
+  margin-right: 20px;
+  color: #000
+}
+
+.hope i:hover {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 767px) {

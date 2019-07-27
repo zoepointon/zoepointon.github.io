@@ -15,20 +15,17 @@
     <script src="//d3js.org/d3.v4.min.js"></script>
   </head>
 
-  <body class="pug">
+  <body class="health">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="circle-container"><div class="circle"></div></div>
       <div class="overlay-content">
         <a href="index.html" class="title">A Guide to Buying a Dog Online</a>
         <div class="content">
           <div class="links center">
-            <a href="purchase-assistant.html" class="secondary-btn pa">Purchase Assistant ></a>
-            <a href="frenchie.html" class="secondary-btn">French Bulldog ></a>
-            <a href="chihuahua.html" class="secondary-btn">Chihuahua ></a>
-            <a href="pug.html" class="secondary-btn">Pug ></a>
-            <a href="cockapoo.html" class="secondary-btn">Cockapoo ></a>
-            <a href="staffy.html" class="secondary-btn">Staffy ></a>
-            <a href="labrador.html" class="secondary-btn">Labrador ></a>
+            <a href="purchase-assistant.html" class="secondary-btn pa">Breed Advise ></a>
+            <a href="purchase-assistant.html" class="secondary-btn pa">Market Advise ></a>
+            <a href="check-list.html" class="secondary-btn pa">Checklist ></a>
           </div>
         </div>
       </div>
@@ -39,49 +36,58 @@
       <span class="burger" onclick="openNav()">&#9776;</span>
     </nav>
 
-    <div class="breed-title-block">
-      <div class="circle light"></div>
+    <div class="breed-title-block pink-mid">
+      <div class="circle"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-5 left">
-            <h2>#3 Pug</h2>
-            <h1>Genetic Conditions</h1>
-            <p>Many pure breeds suffer from genetic disorders due to selective breeding. Pugs are one of the worst impacted by these practices.</p>
+          <div class="col-sm-12 col-lg-5 left">
+            <h2 class="pink">Issue</h2>
+            <h1>BOAS</h1>
+            <p>Brachycephalic Airway Obstruction Syndrome</p>
           </div>
-          <div class="col-md-7 center">
-            <img src="img/pug.png">
+          <div class="col-sm-12 col-lg-7 center">
+            <img src="img/frenchbull-pink-nose-3.png">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="stats breed-stats-block mid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 center">
-            <h1 class="center mode-price">£1000</h1>
-            <h3>Most Common Price</h3>
-          </div>
-          <div class="col-md-4 center">
-            <h1 class="center no-ads">9278</h1>
-            <h3>Adverts</h3>
-          </div>
-          <div class="col-md-4 center">
-            <h1 class="center year">4867</h1>
-            <h3>Breeders</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-block dark">
+    <div class="about-block staffy-mid">
       <div class="container">
         <div class="row">
           <div class="col-md-3 left">
             <h2>What is BAOS?</h2>
           </div>
           <div class="offset-md-1 col-md-8 left">
-            <p>Brachycephalic Airway Obstruction Syndrome (BAOS) is a genetic disorder that effects flat nosed dog breeds. It makes breathing hard for dogs such as; Pugs and French Bulldogs. This disorder is is the result of selective breeding overtime.</p>
+            <p>Brachycephalic Airway Obstruction Syndrome (BAOS) is a genetic disorder that affects flat nosed dog breeds. It makes breathing hard for dogs such as; Pugs and French Bulldogs. This disorder is is the result of selective breeding overtime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons-block skulls staffy-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center">
+            <h2 class="white">Three Types of Dog Skull</h2>
+          </div>
+          <div class="col-md-4 center">
+            <div class="icon">
+              <img src="img/long-skull.png">
+              <h3 class="white">Dolichocephalic</h3>
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div class="icon">
+              <img src="img/mid-skull.png">
+              <h3 class="white">Mesaticephalic</h3>
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div class="icon">
+              <img src="img/short-skull.png">
+              <h3 class="pink">Brachyephalic</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -90,42 +96,38 @@
     <div class="text-block-top-pad">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-3 left">
-            <h2>How Many Dogs does it Impact?</h2>
-            <p>50% of dogs bred to have flat noses suffer from BASO.</p>
+          <div class="col-sm-12 col-lg-3 left">
+            <h2>What's the impact?</h2>
+            <p>All dogs bred to have flat noses suffer from BASO. But 50% suffer severely.</p>
           </div>
-          <div class="col-sm-6 col-md-6 offset-lg-1 col-lg-4">
-            <img src="img/pug-happy.png">
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <img src="img/pug-sad.png">
+          <div class="col-sm-12 offset-lg-1 col-lg-8">
+            <img src="img/flat-face-graphic.png">
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="icons-block light">
+    <div class="icons-block staffy-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="center">Side Effects</h2>
+          <div class="col-md-12 center">
+            <h2>Side Effects</h2>
           </div>
           <div class="col-md-4 center">
-            <div class="icon licence">
-              <img src="img/pug-loud-icon.png">
+            <div class="icon">
+              <img src="img/sound-icon.png">
               <h3>Loud Breathing and Snoring</h3>
             </div>
           </div>
           <div class="col-md-4 center">
-            <div class="icon issuer">
-              <img src="img/pug-hot-icon.png">
+            <div class="icon">
+              <img src="img/sun-icon.png">
               <h3>Exercise and Heat Exertion</h3>
             </div>
           </div>
           <div class="col-md-4 center">
-            <div class="icon photo">
-              <img src="img/pug-vomit-icon.png">
+            <div class="icon">
+              <img src="img/sick-icon.png">
               <h3>Gagging and Vomiting</h3>
             </div>
           </div>
@@ -136,11 +138,11 @@
     <div class="text-block">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 left">
+          <div class="col-md-12 col-lg-3 left">
             <h2>Flat Nosed Dog, Market Share</h2>
-            <p>Over 17% of the dogs advertised are at risk for suffering from BAOS.</p>
+            <p>Over 18% of the dogs advertised are at risk for suffering from BAOS.</p>
           </div>
-          <div class="offset-md-1 col-md-8 left">
+          <div class="col-md-12 offset-lg-1 col-lg-8 left">
             <h4>Flat nosed breeds: Pug, Boston Terrier, Pekingese, Boxer, Shih Tzu, French Bulldogs, English Bulldogs, King Charles Spaniels</h4>
             <div id="chart"></div>
           </div>
@@ -148,18 +150,77 @@
       </div>
     </div>
 
-    <div class="breed-bottom-block">
+    <div class="about-block staffy-dark">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 left">
-            <h2>Pick Another Breed</h2>
-            <p>Want to find out more about the online dog sales market? Select another breed to discover another issue.</p>
-            <a href="purchase-assistant.html" class="secondary-btn">Pick Again ></a>
+          <div class="col-md-3 left">
+            <h2>Which breeds does it affect?</h2>
           </div>
-          <div class="offset-md-2 col-md-5 left location">
-            <h2>Location</h2>
-            <p>Use the map to see where they are being sold.</p>
-            <a href="" class="primary-btn unactive">Coming Soon</a>
+          <div class="offset-md-1 col-md-8 left">
+            <p>BAOS affects all flat nosed breeds to some extent. These breeds include; French Bulldog, English Bulldog, Pug, Boxer, Boston Terrier, Pekingese, Shih Tzu, King Charles Spaniel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pick-dog breed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 left">
+            <h2>Ready to pick a breed?</h2>
+            <p>Take a look at our breed profiles to discover what breed is right for you.</p>
+            <a href="purchase-assistant.html" class="primary-btn">SEARCH BREEDS</a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 dog dog-one frenchie center">
+            <div class="img-holder">
+              <img src="img/frenchie-shoulders.png">
+            </div>
+            <h3>French Bulldog</h3>
+            <a href="frenchie.html" class="secondary-btn">Read More ></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 dog dog-one pug center">
+            <div class="img-holder">
+              <img src="img/pug-shoulders.png">
+            </div>
+            <h3>Pug</h3>
+            <a href="pug.html" class="secondary-btn">Read More ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-block staffy-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center">
+            <h2>Dog Market Advise</h2>
+          </div>
+          <div class="col-md-4 center">
+            <div class="card">
+              <div class="icon">
+                <img src="img/puppy-farm-icon.png">
+                <h3>Puppy Farms</h3>
+                <a href="puppy-farms.html" class="secondary-btn">Read More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div class="card">
+              <div class="icon">
+                <img src="img/rescue-icon.png">
+                <h3>Rescues</h3>
+                <a href="rescues.html" class="secondary-btn">Read More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 center">
+            <div class="card">
+              <div class="icon">
+                <img src="img/cross-breed-icon.png">
+                <h3>Cross Breeds</h3>
+                <a href="cross-breeds.html" class="secondary-btn">Read More ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

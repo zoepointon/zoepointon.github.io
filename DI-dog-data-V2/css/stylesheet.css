@@ -1,0 +1,1164 @@
+html {
+
+}
+
+body {
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 26px;
+  color: #000;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 12px;
+  font-size: 65px;
+  line-height: 90px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 6px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 22px;
+  line-height: 40px;
+  color: #000;
+}
+
+h4 {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  margin: 0;
+}
+
+a.primary-btn {
+  padding: 15px 40px;
+  background-color: #EA9A69;
+  color: #fff;
+  border-radius: 50px;
+  transition: linear 0.5s;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0;
+  transition: linear 0.2s;
+  margin-top: 30px;
+}
+
+a.secondary-btn {
+  transition: linear 0.2s;
+  color: #EA9A69;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0;
+  transition: linear 0.2s;
+}
+
+a.primary-btn:hover {
+  background-color: #F2BE9E;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+a.secondary-btn:hover {
+  padding-left: 10px;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+img {
+  100%;
+}
+
+
+
+p b {
+  font-weight: 400;
+  color:#EBC9B3;
+}
+
+
+
+
+
+
+
+.title-block {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title-block h2 {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.title-block h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.title-block .circle {
+  height: 90vw;
+  width: 90vw;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20vh;
+  z-index: 0;
+  margin: auto;
+}
+
+.title-block img {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.title-block .container, .title-block .row, .title-block .center, .title-block a {
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.about-block {
+  background-color: #414141;
+  padding: 60px 0;
+  position: relative;
+}
+
+.about-block h2, .about-block p {
+  color: #fff;
+  text-align: left;
+}
+
+
+
+
+.stats {
+  padding: 60px 0;
+  position: relative;
+}
+
+.general-stats-block .year {
+  color: #DEA683;
+}
+
+.general-stats-block .no-ads {
+  color: #9FB0B4;
+}
+
+.general-stats-block .mode-price {
+  color: #E2C18D;
+}
+
+
+
+
+
+.chart-one-block {
+  padding: 60px 0;
+}
+
+#chart-1 {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    /* padding-bottom will be overwritten by JavaScript later */
+    padding-bottom: 100%;
+}
+#chart-1 > svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+.leg-intro-block {
+  padding: 60px 0;
+  text-align: left;
+  color: #fff;
+}
+
+.leg-intro-block h2, .leg-intro-block p {
+  color: #fff;
+}
+
+
+
+
+.leg-ad-block {
+  padding: 60px 0;
+}
+
+.leg-ad-block p {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+.icons-block, .card-block {
+  padding: 60px 0;
+}
+
+.icons-block h3, .card-block h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icons-block .icon img {
+  width: 100px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icons-block h2, .card-block h2 {
+  margin-bottom: 30px;
+}
+
+.card-block h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.card-block .icon img {
+  width: 100px;
+  text-align: center;
+}
+
+.card-block .card {
+  background-color: #EFEFEF;
+  border-radius: 30px;
+  border: none;
+  padding: 30px 0 30px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 0 #D3D3D3;
+  transition: linear 0.2s;
+}
+
+.card-block .card:hover {
+  background-color: #F7F7F7;
+  transition: linear 0.2s;
+}
+
+
+.market-advise .card-block {
+  padding-top: 20px;
+}
+
+.market-advise .pa-title-block p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+img.fit {
+  width: 100%;
+  padding: 35px 0;
+}
+
+
+
+
+
+
+
+
+
+.pa-title-block h1, .pa-title-block p {
+  text-align: center;
+}
+
+.pa-title-block h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.pa-title-block p {
+  margin-bottom: 50px;
+}
+
+.pa-title-block .circle-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.pa-title-block .circle {
+  height: 100vw;
+  width: 100vw;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  margin-top: -90vw;
+}
+
+
+
+
+
+
+
+.pa-title-block.issue h2 {
+  margin-top: 60px;
+}
+
+.pa-title-block.issue h1 {
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pick-dog {
+  margin: 40px 0;
+}
+
+.pick-dog .dog {
+  margin-bottom: 40px;
+}
+
+.pick-dog .dog h3 {
+  margin: 20px 0 25px 0;
+}
+
+.pick-dog .img-holder {
+  width: 100%;
+  height: 240px;
+  text-align: center;
+}
+
+.pick-dog .img-holder img {
+  height: 260px;
+  margin-top: -20px;
+}
+
+.dog .img-holder {
+  border-radius: 5000px 5000px 0 0;
+}
+
+.dog-one .img-holder {
+  background-color: #C5CFD2;
+}
+
+.dog-two .img-holder {
+  background-color: #F0ECE9;
+}
+
+.dog-three .img-holder {
+  background-color: #FAF7F0;
+}
+
+.dog-four .img-holder {
+  background-color: #F8EDE6;
+}
+
+.dog-five .img-holder {
+  background-color: #EFEFEF;
+}
+
+.dog-six .img-holder {
+  background-color: #F9F3EA;
+}
+
+.dog-one h1 {
+  color: #9FB0B4;
+}
+
+.dog-two h1 {
+  color: #6A503D;
+}
+
+.dog-three h1 {
+  color: #353433;
+}
+
+.dog-four h1 {
+  color: #DEA683;
+}
+
+.dog-five h1 {
+  color: #414141;
+}
+
+.dog-six h1 {
+  color: #E2C18D;
+}
+
+.dog p {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.breed-title-block {
+  height: 75vh;
+}
+
+.breed-title-block img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.breed-title-block .circle {
+  height: 75vw;
+  width: 75vw;
+  border-radius: 50%;
+  position: absolute;
+  left: -20vw;
+  top: -40vh;
+  z-index: 0;
+  margin: auto;
+}
+
+.breed-title-block h2 {
+  margin-top: 15vh;
+}
+
+
+
+
+.health .breed-title-block h2  {
+  margin-top: 180px;
+}
+
+.health .breed-title-block .circle {
+  background-color: #fff;
+}
+
+.skulls .icon img {
+  width: 60%;
+}
+
+
+
+
+
+.top-stop {
+  border-top: 4px solid #EFEFEF;
+}
+.breed-bottom {
+  padding: 100px 0 60px 0;
+  margin: 0;
+}
+
+.breed-bottom .dog {
+  margin-bottom: 0;
+}
+
+.breed-bottom .dog h3 {
+  margin-bottom: 10px;
+}
+
+.breed-bottom .dog.frenchie .img-holder {
+  background-color: #C5CFD2;
+}
+
+.breed-bottom .dog.pug .img-holder {
+  background-color: #FAF7F0;
+}
+
+.breed-bottom .dog.labrador .img-holder {
+  background-color: #F9F3EA;
+}
+
+.breed-bottom .dog.staffy .img-holder {
+  background-color: #EFEFEF;
+}
+
+.breed-bottom .dog.cockapoo .img-holder {
+  background-color: #F8EDE6;
+}
+
+.breed-bottom .dog.chihuahua .img-holder {
+  background-color: #F0ECE9;
+}
+
+.breed-bottom  p {
+  padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.breed-stats-block {
+  position: relative;
+}
+
+
+
+
+
+.four-col-block {
+  padding: 60px 0;
+}
+
+.four-col-block img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+
+
+
+.text-block {
+  padding: 60px 0;
+}
+
+
+img.chart {
+  width: 100%;
+}
+
+
+
+.breed-bottom-block {
+  padding: 60px 0;
+}
+
+.breed-bottom-block .location p {
+  margin-bottom: 20px;
+}
+
+a.unactive {
+  background-color: #B7B7B7;
+  color: #505050;
+  pointer-events: none;
+}
+
+
+
+
+
+
+.frenchie .breed-title-block h2 {
+    margin-top: 8vh;
+}
+
+.frenchie-light {
+  background-color: #F3F5F5;
+}
+
+.frenchie-mid {
+  background-color: #C5CFD2;
+}
+
+.frenchie-dark {
+  background-color: #9FB0B4;
+}
+
+.frenchie .breed-stats-block h1, .frenchie .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.chihuahua-light {
+  background-color: #F0ECE9;
+}
+
+.chihuahua-mid {
+  background-color: #A5958A;
+}
+
+.chihuahua-dark {
+  background-color: #6A503D;
+}
+
+.chihuahua .breed-stats-block h1, .chihuahua .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+.chihuahua img.chart {
+  padding: 30px 0;
+}
+
+
+
+
+
+
+
+.pug .breed-title-block img {
+    margin-top: 100px;
+}
+
+.pug-light {
+  background-color: #FAF7F0;
+}
+
+.pug-mid {
+  background-color: #F6F0E1;
+}
+
+.pug-dark {
+  background-color: #F0E6CE;
+}
+
+
+
+
+.pug img.chart {
+  padding-top: 30px;
+}
+
+
+
+
+
+.text-block-top-pad {
+  margin-top: 60px;
+}
+
+.text-block-top-pad img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.text-block-top-pad P {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.cockapoo-light {
+  background-color: #F8EDE6;
+}
+
+.cockapoo-mid {
+  background-color: #EBC9B3;
+}
+
+.cockapoo-dark {
+  background-color: #DEA683;
+}
+
+.cockapoo .text-block img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.staffy .breed-title-block img {
+    margin-top: 100px;
+}
+
+.staffy-light {
+  background-color: #EFEFEF;
+}
+
+.staffy-mid {
+  background-color: #8D8D8D;
+}
+
+.staffy-dark {
+  background-color: #414141;
+}
+
+.staffy .breed-stats-block h1, .staffy .breed-stats-block h3 {
+  color: #fff;
+}
+
+
+
+
+.no-top {
+  padding-top: 20px;
+}
+
+
+
+
+
+.labrador .breed-title-block img {
+    margin-top: 50px;
+}
+
+.labrador-light {
+  background-color: #F9F3EA;
+}
+
+.labrador-mid {
+  background-color: #EDDABB;
+}
+
+.labrador-dark {
+  background-color: #E2C18D;
+}
+
+
+
+.white {
+  color: #fff;
+}
+
+.pink-light {
+  background-color: #F9F1F0;
+}
+
+.pink-mid {
+  background-color: #EED6D1;
+}
+
+.pink-dark {
+  background-color: #DDADA4;
+}
+
+.pink {
+  color: #DDADA4 !important;
+}
+
+.orange {
+  color: #EA9A69;
+}
+
+
+
+
+
+
+
+.tick line {
+  visibility: hidden;
+}
+
+.yaxis path {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.xaxis path {
+  visibility: hidden;
+}
+
+.label {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+footer.page-footer {
+  background-color: #414141;
+  color: #fff;
+  padding: 60px 0;
+}
+
+footer.page-footer h2, footer.page-footer p {
+  color: #fff;
+}
+
+footer.page-footer a {
+  margin-right: 20px;
+}
+
+footer a.text-link {
+  margin-right: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+
+nav.scrolled {
+  background-color: #fff !important;
+  box-shadow: 0 3px 0 #D3D3D3;
+  transition: 0.5s;
+}
+
+
+nav {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  transition: 1s;
+}
+
+nav span.burger {
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+  line-height: 50px;
+  z-index: 10;
+}
+
+nav span.title {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  position: absolute;
+  z-index: -1;
+}
+
+nav span.title a {
+  line-height: 50px;
+  font-size: 18px;
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  z-index: -1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EFEFEF;
+  opacity: 0.99;
+  z-index: 5;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25vh;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay a.title {
+  font-family: 'Palanquin', helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.overlay a.title:hover {
+  text-decoration: underline;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a.pa {
+  color: #EA9A69;
+  font-size: 22px;
+}
+
+.overlay a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay a.closebtn:hover {
+  text-decoration: none;
+}
+
+.overlay .content {
+  width: 100%;
+}
+
+.overlay .links {
+  margin: 10px;
+  text-align: center;
+}
+.overlay .links a {
+  margin: 10px;
+}
+
+.overlay .circle-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.overlay .circle {
+  height: 140vh;
+  width: 140vh;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: -1;
+  text-align: center;
+  margin: auto;
+  margin-top: -20vh;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+  h3 {
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+  p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .breed-title-block {
+    height: 90vh;
+  }
+  .breed-title-block .left {
+    text-align: center;
+  }
+  .breed-title-block .circle {
+    height: 80vh;
+    width: 100vw;
+    border-radius: 0 0 50vw 50vw;
+    left: 0;
+    top: 0;
+  }
+  .breed-title-block img {
+    width: 70%;
+    padding-top: 10px;
+  }
+  .left {
+    text-align: center;
+  }
+  .breed-bottom .dog {
+    margin-top: 60px;
+  }
+  .health .breed-title-block h2  {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .overlay a.title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  nav span.title a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  a.primary-btn {
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  a.secondary-btn {
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 45px;
+  }
+
+  .title-block .circle {
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    border-radius: 0 0 50vw 50vw;
+  }
+
+  .pa-title-block .circle {
+    width: 100vw;
+    height: 80vw;
+    border-radius: 0 0 50% 50%;
+    margin-top: -40vw;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay .content {
+    margin: 0;
+  }
+  .overlay .links {
+    display: block;
+  }
+  nav span.title {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  a.primary-btn {
+    font-size: 14px;
+  }
+
+  a.secondary-btn {
+    font-size: 14px;
+  }
+  .icons-block .icon img {
+    width: 80px;
+  }
+  .overlay-content {
+    top: 15vh;
+  }
+}

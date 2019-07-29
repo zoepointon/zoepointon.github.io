@@ -81,7 +81,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 left">
-            <div id="chart"></div>
+            <div id="rescue-1"></div>
           </div>
           <div class="offset-md-1 col-md-3 left">
             <h2>Proportion of Puppies to Rescues</h2>
@@ -130,6 +130,7 @@
             <p>The majority of adverts for rescue dogs are posted by the <b>owners</b> or for <b>stray dogs in Europe</b>.</p>
           </div>
           <div class="offset-md-1 col-md-8 left">
+            <div id="rescue-2"></div>
           </div>
         </div>
       </div>
@@ -139,10 +140,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 left">
+            <div id="rescue-breeds"></div>
           </div>
           <div class="offset-md-1 col-md-3 left">
             <h2>Top Rescue Breeds</h2>
-            <p>Unknown cross breeds <b>‘mutts’ are the most advertised</b> for rescue online. But there are still many adverts for pure breeds.</p>
+            <p>Unknown <b>cross breeds</b> are the <b>most advertised for rescue</b> online. But there are still many adverts for pure breeds.</p>
             <a href="purchase-assistant.html" class="secondary-btn">Select Breed ></a>
           </div>
         </div>
@@ -155,7 +157,7 @@
           <div class="col-md-12 center">
             <h2>Dog Market Advise</h2>
           </div>
-          <div class="col-md-4 center">
+          <div class="col-md-6 center">
             <div class="card">
               <div class="icon">
                 <img src="img/puppy-farm-icon.png">
@@ -164,16 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 center">
-            <div class="card">
-              <div class="icon">
-                <img src="img/rescue-icon.png">
-                <h3>Rescues</h3>
-                <a href="rescues.html" class="secondary-btn">Read More ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 center">
+          <div class="col-md-6 center">
             <div class="card">
               <div class="icon">
                 <img src="img/cross-breed-icon.png">
@@ -222,131 +215,16 @@
       </div>
     </footer>
 
-    <script>
-    // set the dimensions and margins of the graph
-    var margin = {top: 40, right: 0, bottom: 30, left: 100},
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
-
-    // set the ranges
-    var x = d3.scaleBand().range([0, width]).padding(0.1);
-    var y = d3.scaleLinear().range([height, 0]);
-
-    // append the svg object to the body of the page
-    // append a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#chart").append("svg")
-        //.attr("width", width + margin.left + margin.right)
-        //.attr("height", height + margin.top + margin.bottom)
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 960 500")
-      .append("g")
-        .attr("transform",
-              "translate(" + margin.left + "," + margin.top + ")");
-
-    // get the data
-    d3.csv("staffieChart.csv", function(error, data) {
-      if (error) throw error;
-
-      // format the data
-      data.forEach(function(d) {
-        d.Total = +d.Total;
-      });
-
-      // Scale the range of the data in the domains
-      x.domain(data.map(function(d) { return d.Rescue; }));
-      y.domain([0, d3.max(data, function(d) { return d.Total; })]);
-
-      // append the rectangles for the bar chart
-      svg.selectAll(".bar")
-          .data(data)
-        .enter().append("rect")
-          .attr("class", "bar")
-          .attr("x", function(d) { return x(d.Rescue); })
-          .attr("width", x.bandwidth())
-          .attr("y", function(d) { return y(d.Total); })
-          .attr("height", function(d) { return height - y(d.Total); })
-          .attr("rx", "20")
-          .attr("ry", "20");
-
-
-      svg.selectAll(".text")
-          .data(data)
-        .enter().append("text")
-          .attr("text-anchor","middle")
-          .attr("x", function(d) { return x(d.Rescue); })
-          .attr("width", x.bandwidth())
-          .attr("y", function(d) { return y(d.Total); })
-          .attr("dx", "180")
-          .attr("dy", "-20")
-          .text(function(d) { return d.Total; });
-
-
-      // add the x Axis
-      svg.append("g")
-          .attr('class', 'xaxis')
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x));
-
-      // add the y Axis
-      //svg.append("g")
-          //.call(d3.axisLeft(y));
-
-      // Add the text label for the Y axis
-      svg.append("text")
-        .attr('class', 'label')
-        .attr("x","-85")
-        .attr("y","200")
-        .text("Number")
-      svg.append("text")
-        .attr('class', 'label')
-        .attr("x","-78")
-        .attr("y","230")
-        .text("of Ads")
-
-      // triangle
-      svg.append("path")
-        .attr("d","M225 90 L47 215 L47 230 L403.5 230 L403.5 215 Z")
-        .attr("fill","transparent")
-        .attr("stroke","#414141")
-        .attr("stroke-width","12px")
-        .attr("stroke-linejoin","round");
-
-      // style
-      d3.selectAll(".bar")
-        .filter(function(d) { return d.Rescue == "rescue"; })
-        .style("fill", "#414141");
-
-      d3.selectAll(".bar")
-        .filter(function(d) { return d.Rescue == "puppy"; })
-        .style("fill", "#8D8D8D");
-
-      d3.selectAll("text")
-        .style("font-family", "Palanquin")
-        .style("text-transform", "capitalize")
-        .style("letter-spacing", "2px")
-        .style("font-size", "20px");
-
-      // puppy farm text
-      svg.append("text")
-        .attr("x","110")
-        .attr("y","340")
-        .text("RESCUE")
-        .style("font-size","70px")
-        .style("font-weight","900")
-        .style("letter-spacing","-5px")
-        .style("fill","#fff");
-
-    });
-    </script>
 
 
 
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>
+    <script src="//cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/chart-1.js"></script>
+    <script src="js/rescue-1.js"></script>
+    <script src="js/rescue-2.js"></script>
+    <script src="js/rescue-breeds.js"></script>
   </body>
 </html>

@@ -601,6 +601,10 @@ img.fit {
   margin-bottom: 20px;
 }
 
+.four-col-block p.unnatural-icons {
+  margin-bottom: 30px;
+}
+
 
 
 
@@ -1111,6 +1115,9 @@ nav span.title a {
     height: 80vw;
     border-radius: 0 0 50% 50%;
     margin-top: -40vw;
+  }
+  .four-col-block img {
+    width: 150px;
   }
 }
 

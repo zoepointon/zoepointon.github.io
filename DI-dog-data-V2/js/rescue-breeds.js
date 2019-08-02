@@ -111,7 +111,7 @@ d3.csv("rescueBreeds.csv", function(error, data) {
   d3.selectAll("text")
     .style("font-family", "Palanquin")
     .style("text-transform", "capitalize")
-    .style("letter-spacing", "2px")
+    .style("letter-spacing", "1px")
     .style("font-size", "20px");
 
 });

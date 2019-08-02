@@ -7,12 +7,12 @@ var bubble = d3.pack()
     .size([diameter, diameter])
     .padding(5);
 
-var svg = d3.select("#frenchbull-colour").append("svg")
+var svg = d3.select("#puppy-farm-2").append("svg")
     .attr("class", "bubble")
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 960 550");
 
-d3.csv("frenchieChart.csv", function(error, data){
+d3.csv("puppy-farm-2.csv", function(error, data){
     if (error) throw error;
 
     //convert numerical values from strings to numbers
@@ -32,17 +32,13 @@ d3.csv("frenchieChart.csv", function(error, data){
         .enter();
 
 
-    // natural group
+    // Line
     bubbles.append("rect")
       .attr("height", "500")
-      .attr("width","500")
-      .style("fill","#F3F5F5")
-      .attr("cx","500")
-      .attr("cy", "500")
-      .attr("rx", "250")
-      .attr("ry", "250");;
-
-
+      .attr("width","3")
+      .style("fill","#414141")
+      .attr("x","650")
+      .attr("y", "0");
 
     //create the bubbles
     bubbles.append("circle")
@@ -60,56 +56,27 @@ d3.csv("frenchieChart.csv", function(error, data){
         //.style("font-size", "18px");
 
     d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "fawn"; })
-      .style("fill", "#F0E6CE")
-      .attr("cx","270")
-      .attr("cy", "360");
+      .filter(function(d) { return d.data["Number"] == "one"; })
+      .style("fill", "#E2C18D")
+      .attr("cx","220")
+      .attr("cy", "260");
 
     svg.append("text")
-      .attr("x","270")
-      .attr("y","250")
-      .text("Fawn")
+      .attr("class","nobreeds")
+      .attr("x","220")
+      .attr("y","35")
+      .text("1 Breed")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
       .style("text-transform", "capitalize")
       .style("letter-spacing", "2px")
-      .style("font-size", "20px");
+      .style("font-size", "24px")
+      .style("fill","#fff");
       svg.append("text")
-        .attr("x","270")
-        .attr("y","370")
-        .text("809")
-        .attr("text-anchor", "middle")
-        .style("font-family", "Palanquin")
-        .style("text-transform", "capitalize")
-        .style("letter-spacing", "2px")
-        .style("font-size", "20px");
-
-        svg.append("text")
-          .attr('class', 'grouptitle')
-          .attr("x","250")
-          .attr("y","100")
-          .text("Natural")
-          .attr("text-anchor", "middle");
-
-    d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "pied"; })
-      .style("fill", "#fff")
-      .attr("cx","390")
-      .attr("cy", "220");
-
-    svg.append("text")
-      .attr("x","390")
-      .attr("y","163")
-      .text("Pied")
-      .attr("text-anchor", "middle")
-      .style("font-family", "Palanquin")
-      .style("text-transform", "capitalize")
-      .style("letter-spacing", "2px")
-      .style("font-size", "20px");
-      svg.append("text")
-        .attr("x","390")
-        .attr("y","228")
-        .text("175")
+        .attr("class","percentage")
+        .attr("x","220")
+        .attr("y","265")
+        .text("84%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
         .style("text-transform", "capitalize")
@@ -117,25 +84,55 @@ d3.csv("frenchieChart.csv", function(error, data){
         .style("font-size", "20px");
 
     d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "brindle"; })
-      .style("fill", "#000000")
-      .attr("cx","120")
-      .attr("cy", "240");
+      .filter(function(d) { return d.data["Number"] == "two"; })
+      .style("fill", "#E2C18D")
+      .attr("cx","530")
+      .attr("cy", "370");
 
     svg.append("text")
-      .attr("x","120")
-      .attr("y","178")
-      .text("Brindle")
+      .attr("class","nobreeds")
+      .attr("x","530")
+      .attr("y","285")
+      .text("2 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
       .style("text-transform", "capitalize")
       .style("letter-spacing", "2px")
-      .style("font-size", "20px")
-      .style("fill","#000");
+      .style("font-size","24px")
+      .style("fill", "#fff");
       svg.append("text")
-        .attr("x","120")
-        .attr("y","248")
-        .text("223")
+        .attr("class","percentage")
+        .attr("x","530")
+        .attr("y","378")
+        .text("8%")
+        .attr("text-anchor", "middle")
+        .style("font-family", "Palanquin")
+        .style("text-transform", "capitalize")
+        .style("letter-spacing", "2px")
+        .style("font-size", "20px");
+
+    d3.selectAll("circle")
+      .filter(function(d) { return d.data["Number"] == "three"; })
+      .style("fill","#414141")
+      .attr("cx","740")
+      .attr("cy","100");
+
+    svg.append("text")
+      .attr("class","nobreeds")
+      .attr("x","740")
+      .attr("y","60")
+      .text("3 Breeds")
+      .attr("text-anchor", "middle")
+      .style("font-family", "Palanquin")
+      .style("text-transform", "capitalize")
+      .style("letter-spacing", "2px")
+      .style("font-size", "24px")
+      .style("fill","#fff");
+      svg.append("text")
+        .attr("class","percentage")
+        .attr("x","740")
+        .attr("y","105")
+        .text("1%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
         .style("text-transform", "capitalize")
@@ -144,87 +141,120 @@ d3.csv("frenchieChart.csv", function(error, data){
         .style("fill","#fff");
 
     d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "blue"; })
-      .style("fill", "#9FB0B4")
-      .attr("cx","690")
-      .attr("cy", "380");
+      .filter(function(d) { return d.data["Number"] == "four"; })
+      .style("fill","#414141")
+      .attr("cx","900")
+      .attr("cy","160");
 
     svg.append("text")
-      .attr("x","690")
-      .attr("y","210")
-      .text("Blue")
+      .attr("class","nobreeds")
+      .attr("x","900")
+      .attr("y","112")
+      .text("4 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
       .style("text-transform", "capitalize")
       .style("letter-spacing", "2px")
-      .style("font-size", "20px");
+      .style("font-size", "24px")
+      .style("fill","#fff");
       svg.append("text")
-        .attr("x","690")
+        .attr("class","percentage")
+        .attr("x","900")
+        .attr("y","165")
+        .text("2%")
+        .attr("text-anchor", "middle")
+        .style("font-family", "Palanquin")
+        .style("text-transform", "capitalize")
+        .style("letter-spacing", "2px")
+        .style("font-size", "20px")
+        .style("fill", "#fff");
+
+    d3.selectAll("circle")
+      .filter(function(d) { return d.data["Number"] == "six"; })
+      .style("fill","#414141")
+      .attr("cx","780")
+      .attr("cy","260");
+
+    svg.append("text")
+      .attr("class","nobreeds")
+      .attr("x","780")
+      .attr("y","220")
+      .text("6 Breeds")
+      .attr("text-anchor", "middle")
+      .style("font-family", "Palanquin")
+      .style("text-transform", "capitalize")
+      .style("letter-spacing", "2px")
+      .style("font-size", "24px")
+      .style("fill","#fff");
+      svg.append("text")
+        .attr("class","percentage")
+        .attr("x","780")
+        .attr("y","265")
+        .text("1%")
+        .attr("text-anchor", "middle")
+        .style("font-family", "Palanquin")
+        .style("text-transform", "capitalize")
+        .style("letter-spacing", "2px")
+        .style("font-size", "20px")
+        .style("fill","#fff");
+
+    d3.selectAll("circle")
+      .filter(function(d) { return d.data["Number"] == "seven"; })
+      .style("fill", "#414141")
+      .attr("cx","890")
+      .attr("cy", "360");
+
+    svg.append("text")
+      .attr("class","nobreeds")
+      .attr("x","890")
+      .attr("y","320")
+      .text("7 Breeds")
+      .attr("text-anchor", "middle")
+      .style("font-family", "Palanquin")
+      .style("text-transform", "capitalize")
+      .style("letter-spacing", "2px")
+      .style("font-size", "24px")
+      .style("fill","#fff");
+      svg.append("text")
+        .attr("class","percentage")
+        .attr("x","890")
+        .attr("y","365")
+        .text("1%")
+        .attr("text-anchor", "middle")
+        .style("font-family", "Palanquin")
+        .style("text-transform", "capitalize")
+        .style("letter-spacing", "2px")
+        .style("font-size", "20px")
+        .style("fill", "#fff");
+
+    d3.selectAll("circle")
+        .filter(function(d) { return d.data["Number"] == "ten"; })
+        .style("fill","#414141")
+        .attr("cx","750")
+        .attr("cy","430");
+
+    svg.append("text")
+        .attr("class","nobreeds")
+        .attr("x","750")
         .attr("y","390")
-        .text("2245")
+        .text("10 Breeds")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
         .style("text-transform", "capitalize")
         .style("letter-spacing", "2px")
-        .style("font-size", "20px");
-
-    d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "lilac"; })
-      .style("fill", "#9FA1B4")
-      .attr("cx","580")
-      .attr("cy", "100");
-
-    svg.append("text")
-      .attr("x","580")
-      .attr("y","20")
-      .text("Lilac")
-      .attr("text-anchor", "middle")
-      .style("font-family", "Palanquin")
-      .style("text-transform", "capitalize")
-      .style("letter-spacing", "2px")
-      .style("font-size", "20px");
-      svg.append("text")
-        .attr("x","580")
-        .attr("y","110")
-        .text("447")
-        .attr("text-anchor", "middle")
-        .style("font-family", "Palanquin")
-        .style("text-transform", "capitalize")
-        .style("letter-spacing", "2px")
-        .style("font-size", "20px");
-
-    d3.selectAll("circle")
-      .filter(function(d) { return d.data["Colour"] == "tan"; })
-      .style("fill", "#A56C43")
-      .attr("cx","860")
-      .attr("cy", "130");
-
-    svg.append("text")
-      .attr("x","860")
-      .attr("y","20")
-      .text("Tan")
-      .attr("text-anchor", "middle")
-      .style("font-family", "Palanquin")
-      .style("text-transform", "capitalize")
-      .style("letter-spacing", "2px")
-      .style("font-size", "20px");
-      svg.append("text")
-        .attr("x","860")
-        .attr("y","140")
-        .text("863")
-        .attr("text-anchor", "middle")
-        .style("font-family", "Palanquin")
-        .style("text-transform", "capitalize")
-        .style("letter-spacing", "2px")
-        .style("font-size", "20px");
-
-    d3.selectAll("text")
-      .filter(function(d) { return d.data["Colour"] == "brindle"; })
-      .style("fill", "#fff")
-      .attr("x","130")
-      .attr("y","200");
-
-
+        .style("font-size", "24px")
+        .style("fill","#fff");
+        svg.append("text")
+          .attr("class","percentage")
+          .attr("x","750")
+          .attr("y","435")
+          .text("1%")
+          .attr("text-anchor", "middle")
+          .style("font-family", "Palanquin")
+          .style("text-transform", "capitalize")
+          .style("letter-spacing", "2px")
+          .style("font-size", "20px")
+          .style("fill", "#fff");
 
 });
 }())// set the dimensions and margins of the graph

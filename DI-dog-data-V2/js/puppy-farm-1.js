@@ -59,7 +59,7 @@ svg.append("text")
 
   // Advertiser Key
   svg.append("rect")
-    .attr("x","700")
+    .attr("x","705")
     .attr("y","-31")
     .attr("height","6")
     .attr("width", "6")
@@ -69,9 +69,9 @@ svg.append("text")
 
   svg.append("text")
     .attr('class', 'label')
-    .attr("x","720")
+    .attr("x","725")
     .attr("y","-25")
-    .text("= Advertisers")
+    .text("= Advertiser")
 
 
 // rectangle

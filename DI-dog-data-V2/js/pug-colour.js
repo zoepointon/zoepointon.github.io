@@ -40,7 +40,7 @@ d3.csv("pugColourChart.csv", function(error, data){
       .attr("cx","500")
       .attr("cy", "500")
       .attr("rx", "250")
-      .attr("ry", "250");;
+      .attr("ry", "250");
 
     svg.append("text")
       .attr('class', 'label')

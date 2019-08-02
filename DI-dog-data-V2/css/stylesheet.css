@@ -865,6 +865,32 @@ a.unactive {
 }
 
 
+#risk-chart text {
+  font-size: 16px !important;
+}
+
+#puppy-farm-2 text.nobreeds {
+  font-size: 24px !important;
+}
+
+#puppy-farm-2 text.percentage {
+  font-size: 22px !important;
+}
+
+
+
+
+.grouptitle {
+  font-family: 'Palanquin';
+  text-transform: capitalize;
+  letter-spacing: 2px !important;
+  font-size: 30px !important;
+  font-weight: 700;
+}
+
+
+
+
 
 
 

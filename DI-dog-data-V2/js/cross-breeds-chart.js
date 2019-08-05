@@ -130,7 +130,7 @@
       .style("fill", "#414141");
 
     d3.selectAll(".bar")
-      .filter(function(d) { return d.Type == "mixed breeds"; })
+      .filter(function(d) { return d.Type == "cross breeds"; })
       .style("fill", "#DEA683");
 
 

@@ -10,7 +10,7 @@ var bubble = d3.pack()
 var svg = d3.select("#puppy-farm-2").append("svg")
     .attr("class", "bubble")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 960 550");
+    .attr("viewBox", "0 0 960 580");
 
 d3.csv("puppy-farm-2.csv", function(error, data){
     if (error) throw error;
@@ -59,12 +59,12 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       .filter(function(d) { return d.data["Number"] == "one"; })
       .style("fill", "#E2C18D")
       .attr("cx","220")
-      .attr("cy", "260");
+      .attr("cy", "280");
 
     svg.append("text")
       .attr("class","nobreeds")
       .attr("x","220")
-      .attr("y","35")
+      .attr("y","55")
       .text("1 Breed")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
@@ -75,7 +75,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       svg.append("text")
         .attr("class","percentage")
         .attr("x","220")
-        .attr("y","265")
+        .attr("y","285")
         .text("84%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
@@ -115,12 +115,12 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       .filter(function(d) { return d.data["Number"] == "three"; })
       .style("fill","#414141")
       .attr("cx","740")
-      .attr("cy","100");
+      .attr("cy","120");
 
     svg.append("text")
       .attr("class","nobreeds")
       .attr("x","740")
-      .attr("y","60")
+      .attr("y","80")
       .text("3 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
@@ -131,7 +131,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       svg.append("text")
         .attr("class","percentage")
         .attr("x","740")
-        .attr("y","105")
+        .attr("y","125")
         .text("1%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
@@ -144,12 +144,12 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       .filter(function(d) { return d.data["Number"] == "four"; })
       .style("fill","#414141")
       .attr("cx","900")
-      .attr("cy","160");
+      .attr("cy","180");
 
     svg.append("text")
       .attr("class","nobreeds")
       .attr("x","900")
-      .attr("y","112")
+      .attr("y","132")
       .text("4 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
@@ -160,7 +160,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       svg.append("text")
         .attr("class","percentage")
         .attr("x","900")
-        .attr("y","165")
+        .attr("y","185")
         .text("2%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
@@ -173,12 +173,12 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       .filter(function(d) { return d.data["Number"] == "six"; })
       .style("fill","#414141")
       .attr("cx","780")
-      .attr("cy","260");
+      .attr("cy","280");
 
     svg.append("text")
       .attr("class","nobreeds")
       .attr("x","780")
-      .attr("y","220")
+      .attr("y","250")
       .text("6 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
@@ -189,7 +189,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       svg.append("text")
         .attr("class","percentage")
         .attr("x","780")
-        .attr("y","265")
+        .attr("y","285")
         .text("1%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
@@ -202,12 +202,12 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       .filter(function(d) { return d.data["Number"] == "seven"; })
       .style("fill", "#414141")
       .attr("cx","890")
-      .attr("cy", "360");
+      .attr("cy", "380");
 
     svg.append("text")
       .attr("class","nobreeds")
       .attr("x","890")
-      .attr("y","320")
+      .attr("y","340")
       .text("7 Breeds")
       .attr("text-anchor", "middle")
       .style("font-family", "Palanquin")
@@ -218,7 +218,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
       svg.append("text")
         .attr("class","percentage")
         .attr("x","890")
-        .attr("y","365")
+        .attr("y","385")
         .text("1%")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
@@ -231,13 +231,13 @@ d3.csv("puppy-farm-2.csv", function(error, data){
         .filter(function(d) { return d.data["Number"] == "ten"; })
         .style("fill","#414141")
         .attr("cx","750")
-        .attr("cy","430");
+        .attr("cy","450");
 
     svg.append("text")
         .attr("class","nobreeds")
         .attr("x","750")
-        .attr("y","390")
-        .text("10 Breeds")
+        .attr("y","410")
+        .text(">10 Breeds")
         .attr("text-anchor", "middle")
         .style("font-family", "Palanquin")
         .style("text-transform", "capitalize")
@@ -247,7 +247,7 @@ d3.csv("puppy-farm-2.csv", function(error, data){
         svg.append("text")
           .attr("class","percentage")
           .attr("x","750")
-          .attr("y","435")
+          .attr("y","455")
           .text("1%")
           .attr("text-anchor", "middle")
           .style("font-family", "Palanquin")
@@ -255,6 +255,49 @@ d3.csv("puppy-farm-2.csv", function(error, data){
           .style("letter-spacing", "2px")
           .style("font-size", "20px")
           .style("fill", "#fff");
+
+
+          svg.append("text")
+            .attr('class', 'label')
+            .attr("x","340")
+            .attr("y","20")
+            .text("Normal")
+            .attr("text-anchor", "middle")
+            .style("font-family", "Palanquin")
+            .style("text-transform", "capitalize")
+            .style("letter-spacing", "2px")
+            .style("font-size", "26px")
+            .style("font-weight","400")
+            .style("fill", "#fff");
+            svg.append("text")
+              .attr('class', 'label')
+              .attr("x","840")
+              .attr("y","20")
+              .text("Worrying")
+              .attr("text-anchor", "middle")
+              .style("font-family", "Palanquin")
+              .style("text-transform", "capitalize")
+              .style("letter-spacing", "2px")
+              .style("font-size", "26px")
+              .style("font-weight","400")
+              .style("fill", "#fff");
+
+        // Key
+        svg.append("text")
+          .attr("class","nobreeds")
+          .attr("x","40")
+          .attr("y","563")
+          .text("= Percentage of Advertisers")
+          .style("fill", "#fff");
+
+        svg.append("rect")
+          .attr("x","0")
+          .attr("y","540")
+          .attr("width", "30px")
+          .attr("height", "30px")
+          .attr("rx", "15")
+          .attr("ry", "15")
+          .style("fill","#E2C18D");
 
 });
 }())// set the dimensions and margins of the graph

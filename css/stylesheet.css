@@ -6,7 +6,9 @@ body {
 
 
 
-
+.animsition-overlay-slide {
+  background-color: #fff !important;
+}
 
 
 
@@ -85,20 +87,45 @@ body {
   /*filter: grayscale(100%) brightness(110%);*/
 }
 
+.focus-group-image {
+  background: url("../img/dog-focus-group.jpg")no-repeat;
+  height: 100%;
+  position:relative;
+  background-size: cover;
+  background-position: inherit;
+  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%) brightness(110%);*/
+}
+
+.workshop-image {
+  background: url("../img/dog-workshop.jpg")no-repeat;
+  height: 100%;
+  position:relative;
+  background-size: cover;
+  background-position: inherit;
+  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%) brightness(110%);*/
+}
+
 div.top-image, div.about-top-image, div.uni-image, div.hope-image, div.edi-image {
   display: none;
 }
 
-div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask, div.edi .edi-myVideo-mask {
+div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.edi .edi-myVideo-mask {
   overflow: hidden;
   height: 100vh;
+}
+
+div.hope .hope-myvideo-mask {
+  overflow: hidden;
+  height: 70vh;
 }
 
 div.home-top .myVideo {
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   float: right;
   opacity: 1;
   -webkit-transform: scaleX(-1);
@@ -147,6 +174,19 @@ div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
   position: relative;
 }
 
+.image-container {
+  width: 100%;
+  height: 500px;
+  min-height: 200px;
+  position: relative;
+  padding: 0;
+}
+
+div.project-image-text {
+  bottom: 20px;
+  position: absolute;
+}
+
 
 .hope i {
   font-size: 22px;
@@ -164,7 +204,7 @@ div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
     padding-right: 0;
     padding-left: 0;
   }
-  div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
+  div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text, div.project-image-text {
     bottom: 0;
     height: auto;
     position: inherit;
@@ -313,7 +353,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 4;
-  background-color: rgba(255,255,255);
+  background-color: transparent;
 }
 
 nav span.burger {
@@ -333,12 +373,13 @@ nav div.title a {
   font-size: 30px;
   letter-spacing: 4px;
   color: #000;
-  width: 100%;
+  /**width: 100%;**/
   z-index: -1;
 }
 
 nav div.title {
-  width: 100%;
+  /**width: 100%;**/
+  margin-left: 30px;
   text-align: center;
   height: 60px;
   position: absolute;
@@ -347,17 +388,7 @@ nav div.title {
 
 
 @media screen and (max-width: 575px) {
-  nav div.title a {
-    font-size: 24px;
-  }
-  nav span.burger {
-    font-size: 20px;
-    cursor: pointer;
-    float: right;
-    margin-right: 10px;
-    line-height: 60px;
-    z-index: 10;
-  }
+
 }
 
 
@@ -378,6 +409,7 @@ p {
   font-weight: 300;
   font-size: 20px;
   color: #000;
+  opacity: 0.6;
 }
 
 p.big-paragraph {
@@ -398,12 +430,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Work', sans-serif;
-  text-transform: lowercase;
-  font-weight: 300;
-  color: #bfbfbf;
-  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 34px;
   letter-spacing: 2px;
+  line-height: 48px;
 }
 
 h3 {
@@ -413,6 +444,7 @@ h3 {
   color: #000;
   font-size: 14px;
   letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
 h4 {
@@ -439,9 +471,12 @@ ul li {
   font-size: 20px;
   color: #000;
   padding-bottom: 20px;
+  opacity: 0.6;
 }
 
-
+.center {
+  text-align: center;
+}
 
 
 
@@ -490,9 +525,7 @@ div.top-text {
   position: absolute;
 }
 
-div.top-text h1, div.top-text p  {
-  color: #000;
-}
+
 
 
 
@@ -517,7 +550,6 @@ div.bio {
 
 div.bio p {
   text-align: center;
-  color: #000;
 }
 
 .icon h1 {
@@ -541,6 +573,28 @@ div.bio p {
 
 
 
+.primary-button {
+  padding: 8px 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  background-color: transparent;
+  border: solid #000 1px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+
+.primary-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
 
 
 
@@ -548,7 +602,7 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #000;
   margin-left: 40px;
   transition: ease 0.3s;
@@ -560,7 +614,7 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -583,7 +637,7 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -870,8 +924,8 @@ div.top-portfolio h1 {
 
 .project-title {
   text-align: left;
-  margin-top: 120px;
-  margin-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .project .project-title h1 {
@@ -882,8 +936,13 @@ div.top-portfolio h1 {
   margin-bottom: 30px;
 }
 
+.project .project-title h3 {
+  margin-top: 35px;
+}
+
 .project .project-title p {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .project img {
@@ -891,12 +950,12 @@ div.top-portfolio h1 {
   margin: 15px 0;
 }
 
-.project h1 {
+.project .list h1 {
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.project p {
+.project-title p {
   margin: 15px 0;
 }
 
@@ -908,7 +967,7 @@ div.top-portfolio h1 {
 
 
 .low-light {
-  background-color: #FAFAFA;
+  background-color: #f5f5f5;
   padding: 40px 0;
 }
 
@@ -929,4 +988,109 @@ div.top-portfolio h1 {
 
 .storyboard .row {
   margin-bottom: 30px;
+}
+
+.bottom {
+  margin-bottom: 30px;
+}
+
+
+a.project-next {
+  text-align: center;
+  transition: ease 0.4s;
+}
+
+a.project-next .container-fluid {
+  background-color: #D9D9D9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a.project-next:hover, a.project-next:hover h1, a.project-next:hover h3 {
+  text-align: center;
+  color: #fff;
+}
+
+a.project-next .container-fluid {
+    transition: ease 0.4s;
+}
+
+a.project-next:hover .container-fluid {
+  background-color: #000;
+  transition: ease 0.4s;
+}
+
+.pad {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.project-top {
+  background: linear-gradient(180deg, #D9D9D9 60%, #fff 40%);
+  text-align: center;
+}
+
+.project-top img {
+  margin-top: 50px;
+  height: 65vh;
+  width: auto;
+  text-align: center;
+}
+
+.project-full-img {
+  text-align: center;
+}
+.project-full-img img {
+  width: 80%;
+}
+
+
+.project-phase ul li {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 18px;
+}
+
+img.round {
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.project.dark p, .project.dark ul li, .project.dark  h1, .project.dark h2, .project.dark h3, .project.dark a.secondary-button, .project.dark a.primary-button, .project.dark nav, .project.dark nav .title a {
+  color: #fff;
+}
+
+.project.dark {
+  background-color: #222222;
+}
+
+.project.dark .project-top {
+  background: linear-gradient(180deg, #393939 60%, #222222 40%);
+  text-align: center;
+}
+
+.project.dark .low-light {
+  background-color: #393939;
+}
+
+.project.dark a.project-next .container-fluid {
+  background-color: #393939;
+}
+
+.project.dark a.project-next:hover .container-fluid {
+  background-color: #000;
+  transition: ease 0.4s;
+}
+
+.project .panicapp-mvp {
+  background: linear-gradient(90deg, #393939 55%, #222222 45%);
+}
+
+.project.dark a.primary-button {
+  border: solid #fff 1px;
+}
+
+.project.dark a.primary-button:hover {
+  background-color: #fff;
+  color: #000;
 }

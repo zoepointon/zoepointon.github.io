@@ -20,6 +20,21 @@
 
     <script src="https://kit.fontawesome.com/4514891e99.js"></script>
 
+
+
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="../css/animsition.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../js/animsition.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140335273-1"></script>
     <script>
@@ -33,33 +48,16 @@
   </head>
 
   <body class="home">
-    <div id="myNav" class="overlay">
-      <div class="overlay-content">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="container-fluid">
-          <div class="row overlay-links">
-            <div class="col-sm-12">
-              <a href="index.html">Home</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="about.html">About</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="nav-placeholder"></div>
 
-    <nav>
-      <div class="title"><a href="index.html">Zoe Ellen Pointon</a></div>
-      <span class="burger" onclick="openNav()">&#9776;</span>
-    </nav>
 
     <div class="container-fluid home-top">
       <div class="row">
         <div class="col-md-3 offset-md-1">
           <div class="top-text">
-            <h1>UX Analyst</h1>
+            <h1>UX Designer</h1>
             <p>Striving to create better user experiences, by connecting data with design.</p>
-            <button onclick="location.href='portfolio.html'" class="pulse-button">see work</button>
+            <a href="portfolio.html" class="primary-button animsition-link">View Work</a>
           </div>
         </div>
         <div class="col-md-8 top-image-container myvideo-mask video-bg">
@@ -76,81 +74,28 @@
       <div class="row">
         <div class="col-xs-12 col-md-8 offset-md-2">
           <p class="big-paragraph">Design Informatics, Masters student at the University of Edinburgh. <span class="highlight-text">Two years design experience</span> working within the Tech Industry. Graduated from the University of Winchester with a <span class="highlight-text">first class honours</span> in Digital Media Design.
-          <br>Looking for a new oppertunity in <span class="highlight-text">user experience analytics or data science</span>.
+          <br>Looking for a new oppertunity in <span class="highlight-text">user experience design</span>.</p>
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12 work">
-          <h1>View my work</h1>
-          <p>Take a look at some of the projects I have worked on.</p>
-        </div>
         <div class="col-xs-6 col-md-6 item">
           <a href="dog-data.html">
             <img src="img/dog-data-home.jpg">
-            <h1>Guide to Buying a Dog Online</h1>
-            <h2>Research, UX, Focus Group, UI, Illustration, Data, D3</h2>
+            <h1>A Guide to Buying a Dog Online</h1>
           </a>
         </div>
         <div class="col-xs-6 col-md-6 item">
           <a href="panicapp.html">
             <img src="img/panicapp-home.jpg">
             <h1>PanicApp</h1>
-            <h2>Research, UX, UI, Protyping</h2>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid view-all-work">
-      <div class="row">
-        <div class="col-md-12 center">
-          <button onclick="location.href='portfolio.html'" class="pulse-button">view more</button>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="container-fluid icons">
-      <div class="row">
-        <div class="col-xs-12 col-md-3 offset-md-1 center-svg">
-          <div class="icon">
-            <svg class="research-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <g class="mag">
-                <path class="mag-glass" d="M206,99c0-29.3-23.7-53-53-53s-53,23.7-53,53c0,26.4,19.3,48.2,44.5,52.3v26.9h17v-26.9C186.7,147.2,206,125.4,206,99zM153,135c-19.9,0-36-16.1-36-36c0-19.9,16.1-36,36-36s36,16.1,36,36C189,118.9,172.9,135,153,135z"/>
-                <rect class="mag-handle" x="139.5" y="170.7" class="st0" width="27" height="88.3"/>
-              </g>
-            </svg>
-            <h1>Analyse</h1>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4 center-svg">
-          <div class="icon">
-            <svg class="design-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <line class="pencil-line" x1="152.5" y1="48.5" x2="152.5" y2="139.5"/>
-              <g class="pencil">
-                <polygon class="black-pencil" points="180,245 125.4,245 125.4,84.3 142.9,59.1 152.7,52 162.2,58.7 180,84.3 	"/>
-                <rect class="pencil-rubber" x="125.4" y="243.3" width="54.6" height="17.7"/>
-                <polygon class="pencil-point" points="163.8,61 152.7,45 141.6,61 	"/>
-              </g>
-            </svg>
-            <h1>Design</h1>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-3 center-svg">
-          <div class="icon">
-            <svg class="develop-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-              <g class="red-cog">
-                <path class="red-cog-outside" d="M185.1,142.3l11-11l-6.4-7.8c3.2-4.8,5.3-10,6.4-15.5l10-1V91.4l-10-1c-1.1-5.4-3.2-10.7-6.4-15.5l6.4-7.8 l-11-11l-7.8,6.4c-4.8-3.2-10-5.3-15.5-6.4l-1-10h-15.6l-1,10c-5.4,1.1-10.7,3.2-15.5,6.4l-7.8-6.4l-11,11l6.4,7.8 c-3.2,4.8-5.3,10-6.4,15.5l-10,1l0,15.6l10,1c1.1,5.4,3.2,10.7,6.4,15.5l-6.4,7.8l11,11l7.8-6.4c4.8,3.2,10,5.3,15.5,6.4l1,10 l15.6,0l1-10c5.4-1.1,10.7-3.2,15.5-6.4L185.1,142.3z M131.6,120.5c-11.8-11.8-11.8-30.9,0-42.7c11.8-11.8,30.9-11.8,42.7,0 c11.8,11.8,11.8,30.9,0,42.7C162.6,132.3,143.4,132.3,131.6,120.5z"/>
-              </g>
-              <path class="black-cog" d="M205.1,193.7l-6-14.4l-9.6,2.9c-3.2-4.8-7.3-8.7-11.9-11.8l2.9-9.7l-14.4-6l-4.8,8.9c-5.4-1.1-11.1-1.1-16.8,0l-4.8-8.9 l-14.4,6l2.9,9.6c-4.8,3.2-8.7,7.3-11.8,11.9l-9.7-2.9l-6,14.4l8.9,4.8c-1.1,5.4-1.1,11.1,0,16.8l-8.9,4.8l6,14.4l9.6-2.9 c3.2,4.8,7.3,8.7,11.9,11.8l-2.9,9.7l14.4,6l4.8-8.9c5.4,1.1,11.1,1.1,16.8,0l4.8,8.9l14.4-6l-2.9-9.6c4.8-3.2,8.7-7.3,11.8-11.9 l9.7,2.9l6-14.4l-8.9-4.8c1.1-5.4,1.1-11.1,0-16.8L205.1,193.7z M157.6,217.9c-6.1,2.5-13.1-0.4-15.6-6.5 c-2.5-6.1,0.4-13.1,6.5-15.6c6.1-2.5,13.1,0.4,15.6,6.5C166.6,208.4,163.7,215.4,157.6,217.9z"/>
-            </svg>
-            <h1>Test</h1>
-          </div>
-        </div>
-      </div>
-    </div>-->
 
     <div class="container-fluid hope">
       <div class="row">
@@ -178,6 +123,7 @@
         </div>
       </div>
     </div>
+
 
     <script src="js/script-all.js"></script>
   </body>

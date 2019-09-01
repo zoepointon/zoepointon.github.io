@@ -1094,3 +1094,27 @@ img.round {
   background-color: #fff;
   color: #000;
 }
+
+.demo-container {
+  background-color: #D9D9D9;
+}
+
+.demo-video {
+  width: 70vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+}
+
+.demo-video-text {
+  bottom: 50px;
+  position: absolute;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .demo-video-text {
+    position: inherit;
+    margin-top: 50px;
+  }
+}

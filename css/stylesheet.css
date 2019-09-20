@@ -31,14 +31,15 @@ body {
 
 
 
-
+img.bw {
+  -webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(110%);*/
+}
 
 
 
 .top-image {
-  background: url("../img/arthers-seat.JPG")no-repeat;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  background: url("../img/hero-img.jpg")no-repeat;
   height: 100%;
   position:relative;
   background-size: cover;
@@ -48,7 +49,7 @@ body {
 }
 
 .about-top-image {
-  background: url("../img/event.JPG")no-repeat;
+  background: url("../img/hero-img.jpg")no-repeat;
   height: 100%;
   position:relative;
   background-size: cover;
@@ -67,90 +68,51 @@ body {
   /*filter: grayscale(100%) brightness(110%);*/
 }
 
-.hope-image {
-  background: url("../img/hope.JPG")no-repeat;
-  height: 100%;
-  position:relative;
-  background-size: cover;
-  background-position: inherit;
-  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
-  /*filter: grayscale(100%) brightness(110%);*/
-}
 
-.edi-image {
-  background: url("../img/arthers-seat.JPG")no-repeat;
-  height: 100%;
-  position:relative;
-  background-size: cover;
-  background-position: inherit;
-  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
-  /*filter: grayscale(100%) brightness(110%);*/
-}
-
-.focus-group-image {
-  background: url("../img/dog-focus-group.jpg")no-repeat;
-  height: 100%;
-  position:relative;
-  background-size: cover;
-  background-position: inherit;
-  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
-  /*filter: grayscale(100%) brightness(110%);*/
-}
-
-.workshop-image {
-  background: url("../img/dog-workshop.jpg")no-repeat;
-  height: 100%;
-  position:relative;
-  background-size: cover;
-  background-position: inherit;
-  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
-  /*filter: grayscale(100%) brightness(110%);*/
-}
-
-div.top-image, div.about-top-image, div.uni-image, div.hope-image, div.edi-image {
+div.top-image, div.about-top-image, div.uni-image {
   display: none;
 }
 
-div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.edi .edi-myVideo-mask {
+div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
   overflow: hidden;
   height: 100vh;
 }
 
-div.hope .hope-myvideo-mask {
-  overflow: hidden;
-  height: 70vh;
-}
 
 div.home-top .myVideo {
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 70vh;
-  float: right;
-  opacity: 1;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  height: 100vh;
+  /* float: right;*/
+  /*-webkit-transform: scaleX(-1); */
+  /*transform: scaleX(-1); */
   /*-webkit-filter: grayscale(100%) brightness(100%); /* Safari 6.0 - 9.0 */
   /*filter: grayscale(100%) brightness(100%);*/
 }
-div.edi .edi-myVideo {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
+
 
 div.home-top, div.about-top {
   height: 100vh;
 }
 
-div.panicapp, div.cameo, div.around, div.icons {
-  height: 100vh;
-}
-
-div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask, div.edi .edi-myVideo-mask {
+div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
   padding: 0;
 }
 
-div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo, div.hope .hope-myVideo, div.edi .edi-myVideo {
+div.about-top .about-top-myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 100vh;
+  float: right;
+  opacity: 1;
+  object-fit: cover;
+  /*-webkit-filter: grayscale(100%) brightness(110%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%) brightness(110%);*/
+}
+
+div.about-uni .about-uni-myVideo {
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -162,12 +124,12 @@ div.about-top .about-top-myVideo, div.about-uni .about-uni-myVideo, div.hope .ho
   /*filter: grayscale(100%) brightness(110%);*/
 }
 
-div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text {
+div.about-top-text, div.about-uni-text {
   bottom: 100px;
   position: absolute;
 }
 
-.top-image-container, .about-top-image-container, .uni-image-container, .hope-image-container, .edi-image-container {
+.top-image-container, .about-top-image-container, .uni-image-container{
   width: 100%;
   height: 400px;
   min-height: 200px;
@@ -188,44 +150,8 @@ div.project-image-text {
 }
 
 
-.hope i {
-  font-size: 22px;
-  margin-right: 20px;
-  color: #000
-}
 
-.hope i:hover {
-  opacity: 0.4;
-}
 
-@media screen and (max-width: 767px) {
-  div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask, div.hope .hope-myvideo-mask, div.edi .edi-myVideo-mask {
-    height: 400px;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  div.about-top-text, div.about-uni-text, div.hope-text, div.edi-text, div.project-image-text {
-    bottom: 0;
-    height: auto;
-    position: inherit;
-    margin-top: 50px;
-  }
-  div.about-top {
-    margin-bottom: 50px;
-  }
-  div.top-text {
-    top: 430px;
-  }
-  div.top-image, div.about-top-image, div.uni-image, div.hope-image, div.edi-image {
-    display: block;
-  }
-  video.myVideo, video.about-top-myVideo, video.about-uni-myVideo, video.hope-myVideo, video.edi-myVideo {
-    display: none;
-  }
-  div.hope-text {
-    margin-bottom: 50px;
-  }
-}
 
 
 
@@ -246,7 +172,14 @@ div.project-image-text {
 }
 
 .experience h3, .about-uni h3 {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+p.date {
   margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 
@@ -301,7 +234,6 @@ div.project-image-text {
    font-weight: 200;
    letter-spacing: 4px;
    transition: ease 0.5s;
-   text-transform: uppercase;
    text-align: center;
 }
 
@@ -368,7 +300,6 @@ nav span.burger {
 nav div.title a {
   line-height: 60px;
   font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
   font-weight: 200;
   font-size: 30px;
   letter-spacing: 4px;
@@ -386,10 +317,6 @@ nav div.title {
   z-index: -1;
 }
 
-
-@media screen and (max-width: 575px) {
-
-}
 
 
 
@@ -410,6 +337,7 @@ p {
   font-size: 20px;
   color: #000;
   opacity: 0.6;
+  line-height: 36px;
 }
 
 p.big-paragraph {
@@ -422,7 +350,6 @@ span.highlight-text {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
   font-weight: 200;
   color: #000;
   font-size: 24px;
@@ -539,13 +466,14 @@ div.top-text {
   height: 100vh;
 }
 
-div.top-text p, div.hope-text p, div.about-top-text p {
+div.top-text p, div.about-top-text p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 div.bio {
-  margin: 200px 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 div.bio p {
@@ -574,11 +502,10 @@ div.bio p {
 
 
 .primary-button {
-  padding: 8px 20px;
+  padding: 5px 24px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: uppercase;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -602,7 +529,6 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: uppercase;
   color: #000;
   margin-left: 40px;
   transition: ease 0.3s;
@@ -614,7 +540,6 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: uppercase;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -637,7 +562,6 @@ a.secondary-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: uppercase;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -852,7 +776,8 @@ div.top-portfolio h1 {
 
 
 .footer {
-
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer p {
@@ -861,57 +786,21 @@ div.top-portfolio h1 {
   margin-bottom: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-  div.panicapp-text, div.cameo-text, div.around-text, div.icon, div.binkybear-text, div.lomax-text {
-    position: inherit;
-    top: auto;
-    transform: none;
-    padding-top: 20px;
-    padding-bottom: 100px;
-  }
-
-  div.panicapp-text p, div.cameo-text p, div.around-text p, div.binkybear-text p, div.lomax-text p {
-    display: none;
-  }
-
-  div.panicapp-text button, div.cameo-text button, div.around-text button, div.binkybear-text button, div.lomax-text button {
-    margin-top: 20px;
-  }
-
-  div.icons{
-    display: none;
-  }
-
-  div.panicapp, div.cameo, div.around, div.icons, div.binkybear, div.lomax {
-    height: auto;
-  }
-
-  .panicapp .row, .cameo .row,  .around .row, .icons .row, .binkybear .row, .lomax .row {
-    height: auto;
-  }
-
-  div.bio {
-    margin: 100px 0;
-  }
-
-  div.bio p {
-    font-size: 20px;
-  }
+.footer i {
+  font-size: 22px;
+  margin: 0 12px;
+  color: #000
 }
+
+.footer i:hover {
+  opacity: 0.4;
+}
+
+
+
+
+
+
 
 
 
@@ -947,7 +836,6 @@ div.top-portfolio h1 {
 
 .project img {
   width: 100%;
-  margin: 15px 0;
 }
 
 .project .list h1 {
@@ -956,7 +844,8 @@ div.top-portfolio h1 {
 }
 
 .project-title p {
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .project .buttons {
@@ -964,13 +853,6 @@ div.top-portfolio h1 {
   margin-bottom: 90px;
   text-align: center;
 }
-
-
-.low-light {
-  background-color: #f5f5f5;
-  padding: 40px 0;
-}
-
 
 
 .around-prototype, .panicapp-prototype, .binkybear-video {
@@ -1021,8 +903,12 @@ a.project-next:hover .container-fluid {
 }
 
 .pad {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.top-pad {
+  padding-top: 40px;
 }
 
 .project-top {
@@ -1052,8 +938,8 @@ a.project-next:hover .container-fluid {
 }
 
 img.round {
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
+  /*border-radius: 10px;*/
+  /*box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);*/
 }
 
 .project.dark p, .project.dark ul li, .project.dark  h1, .project.dark h2, .project.dark h3, .project.dark a.secondary-button, .project.dark a.primary-button, .project.dark nav, .project.dark nav .title a {
@@ -1095,8 +981,8 @@ img.round {
   color: #000;
 }
 
-.demo-container {
-  background-color: #D9D9D9;
+.dog-data .demo-container {
+  background-color: #ea9a69;
 }
 
 .demo-video {
@@ -1111,10 +997,123 @@ img.round {
   position: absolute;
 }
 
+.demo-video-text p {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
+    height: 250px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  div.about-top-text, div.about-uni-text, div.project-image-text {
+    bottom: 0;
+    height: auto;
+    position: inherit;
+    margin-top: 50px;
+  }
+  div.about-top {
+    margin-bottom: 50px;
+  }
+  div.top-text {
+    top: 300px;
+  }
+  div.top-image, div.about-top-image, div.uni-image {
+    display: block;
+  }
+  video.myVideo, video.about-top-myVideo, video.about-uni-myVideo {
+    display: none;
+  }
+  .pad {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .item {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  div.panicapp-text, div.cameo-text, div.around-text, div.icon, div.binkybear-text, div.lomax-text {
+    position: inherit;
+    top: auto;
+    transform: none;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  div.panicapp-text p, div.cameo-text p, div.around-text p, div.binkybear-text p, div.lomax-text p {
+    display: none;
+  }
+
+  div.panicapp-text button, div.cameo-text button, div.around-text button, div.binkybear-text button, div.lomax-text button {
+    margin-top: 20px;
+  }
+
+  div.icons{
+    display: none;
+  }
+
+  div.panicapp, div.cameo, div.around, div.icons, div.binkybear, div.lomax {
+    height: auto;
+  }
+
+  .panicapp .row, .cameo .row,  .around .row, .icons .row, .binkybear .row, .lomax .row {
+    height: auto;
+  }
+
+  div.bio {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  div.bio p {
+    text-align: left;
+  }
+
+  div.bio p {
+    font-size: 20px;
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   .demo-video-text {
     position: inherit;
     margin-top: 50px;
+  }
+  .demo-video {
+    width: 70vw;
+  }
+
+  img.browser {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  .project-window {
+    display: none;
   }
 }

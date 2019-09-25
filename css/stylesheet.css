@@ -295,6 +295,7 @@ nav span.burger {
   margin-right: 30px;
   line-height: 60px;
   z-index: 10;
+  color: #000;
 }
 
 nav div.title a {
@@ -315,6 +316,7 @@ nav div.title {
   height: 60px;
   position: absolute;
   z-index: -1;
+  color: #000;
 }
 
 
@@ -916,10 +918,17 @@ a.project-next:hover .container-fluid {
   text-align: center;
 }
 
-.project-top img {
+.project-top img.browser {
   margin-top: 50px;
-  height: 65vh;
-  width: auto;
+  height: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.project-top img.phone {
+  margin-top: 50px;
+  height: auto;
+  width: 35%;
   text-align: center;
 }
 
@@ -942,7 +951,7 @@ img.round {
   /*box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);*/
 }
 
-.project.dark p, .project.dark ul li, .project.dark  h1, .project.dark h2, .project.dark h3, .project.dark a.secondary-button, .project.dark a.primary-button, .project.dark nav, .project.dark nav .title a {
+.project.dark p, .project.dark ul li, .project.dark  h1, .project.dark h2, .project.dark h3, .project.dark a.secondary-button, .project.dark a.primary-button, .project.dark nav, .project.dark nav .title a, .project.dark nav .burger {
   color: #fff;
 }
 
@@ -985,6 +994,10 @@ img.round {
   background-color: #ea9a69;
 }
 
+.lomax .demo-container {
+  background-color: #D9D9D9;
+}
+
 .demo-video {
   width: 70vh;
   margin-top: 60px;
@@ -1001,6 +1014,14 @@ img.round {
   margin-bottom: 40px;
 }
 
+
+
+
+
+
+.cookieinfo {
+  background-color: #fff;
+}
 
 
 
@@ -1026,8 +1047,15 @@ img.round {
   div.about-top {
     margin-bottom: 50px;
   }
+
+  div.home-top, div.about-top {
+    height: auto;
+  }
+
   div.top-text {
-    top: 300px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    position: relative;
   }
   div.top-image, div.about-top-image, div.uni-image {
     display: block;
@@ -1097,8 +1125,6 @@ img.round {
 
 
 
-
-
 @media screen and (max-width: 1024px) {
   .demo-video-text {
     position: inherit;
@@ -1115,5 +1141,22 @@ img.round {
 
   .project-window {
     display: none;
+  }
+
+  nav {
+    background-color: #fff;
+  }
+
+  .project-top img {
+    height: auto;
+    width: 50vw;
+    padding-top: 80px;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+  .demo-video {
+    width: 50vw;
   }
 }

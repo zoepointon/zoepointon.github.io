@@ -1,0 +1,276 @@
+html {
+  background-color: #EAEAEA;
+}
+
+body {
+  font-family: 'Work Sans', helvetica, sans-serif;
+  color: #000;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #EAEAEA;
+  padding-top: 60px;
+}
+
+h1 {
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+}
+
+h4 {
+  font-family: 'Work Sans', helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Work Sans', helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+.white {
+  color: #FFF;
+}
+
+.white-bg {
+  color: #FFF;
+}
+
+.pink {
+  color: #FB007F;
+}
+
+.pink-bg {
+  background-color: #FB007F;
+}
+
+.green {
+  color: #C3D400;
+}
+
+.green-bg {
+  background-color: #C3D400;
+}
+
+.mid-grey {
+  color: #706E6F;
+}
+
+.mid-grey-bg {
+  background-color: #706E6F;
+}
+
+.dark-grey {
+  color: #474546;
+}
+
+.dark-grey-bg {
+  background-color: #474546;
+}
+
+.light-grey {
+  color: #DFDFDF;
+}
+
+.light-grey-bg {
+  background-color: #DFDFDF;
+}
+
+
+
+
+
+
+a.primary-btn {
+  padding: 5px 40px;
+  background-color: #FB007F;
+  color: #fff;
+  transition: linear 0.5s;
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  transition: linear 0.2s;
+}
+
+a.primary-btn:hover {
+  background-color: #C1016A;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+
+
+
+
+a.secondary-btn {
+  transition: linear 0.2s;
+  color: #000;
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  transition: linear 0.2s;
+}
+
+a.secondary-btn:hover {
+  color: #FB007F;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+
+
+
+
+a.tertiary-btn {
+  transition: linear 0.2s;
+  color: #000;
+  font-family: "Century Gothic", "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px 0;
+  transition: linear 0.2s;
+}
+
+a.tertiary-btn:hover {
+  color: #FB007F;
+  transition: linear 0.2s;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.center {text-align: center;}
+
+.left {text-align: left;}
+
+.right {text-align: right;}
+
+
+
+
+
+
+
+
+
+nav {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color: #484848;
+  top: 0;
+}
+
+nav div.nav-logo img {
+  height: 43px;
+}
+
+nav div.nav-logo {
+  float: left;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  width: 50px;
+  background-color: #212121;
+}
+
+
+
+
+
+
+.content {
+  width: 80%;
+  margin-left: auto;
+}
+
+
+
+
+
+.sidebar {
+  width: 20%;
+  background-color: #C9C9C9;
+  height: 100vh;
+  float: left;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.sidebar ul li a {
+  line-height: 35px;
+}
+
+.sidebar ul li a.tertiary-btn {
+  margin-left: 20px;
+}
+
+.sidebar ul li.group {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.title-bar {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.title-bar h1 {
+  margin: 0;
+}
+
+
+
+
+
+
+.card {
+  margin: 30px 10px 10px 10px;
+  border: 0;
+  border-radius: 0;
+}
+
+.card .title {
+  padding: 10px;
+}
+
+.card a.primary-btn {
+  width: 100%;
+}

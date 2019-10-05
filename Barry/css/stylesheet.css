@@ -107,10 +107,9 @@ span.bold {
 .pad {
   padding-top: 70px;
   padding-bottom: 70px;
-  border-bottom: solid 1px #F0F0F0;
 }
 
-.border {
+.border-grey {
   border-bottom: solid 1px #F0F0F0;
 }
 
@@ -122,12 +121,34 @@ span.bold {
   padding-bottom: 40px;
 }
 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+
+li {
+  font-family: helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 40px;
+  color: #000;
+  margin: 0;
+}
+
 
 
 
 
 nav {
-  height: 70px;
+  height: 85px;
   line-height: 50px;
   width: 100%;
   position: fixed;
@@ -135,28 +156,25 @@ nav {
   background-color: #fff;
 }
 
-nav .title {
+nav .title img {
   margin-left: 25px;
-  float: left;
-  line-height: 70px;
-  font-size: 24px;
-  font-family: 'Patrick Hand', helvetica, sans-serif;
-  font-weight: 400;
-  color: #000;
   float: left;
   position: absolute;
   text-align: left;
   z-index: -1;
+  height: 50px;
+  margin-top: 25px;
 }
 
 nav .title span {
   font-size: 16px;
 }
 
-nav a {
-  margin-top: 15px;
+nav button {
+  margin-top: 22px;
   margin-right: 25px;
-  padding: 0px 25px;
+  width: 150px;
+  height: auto;
   line-height: 40px;
   background-color: #C8E88E;
   color: #000;
@@ -165,13 +183,16 @@ nav a {
   text-transform: uppercase;
   transition: linear 0.2s;
   float: right;
+  border: none;
 }
 
-nav a:hover {
+nav button:hover, nav button:focus {
   color: #000;
   background-color: #A2F4BD;
   transition: linear 0.2s;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 
@@ -221,14 +242,14 @@ img.down-arrow {
 /* landing parallax */
 .parallax-1 {
   /* The image used */
-  background-image: url("../img/AdobeStock_85258702_Preview.jpeg");
+  background-image: url("../img/hero.jpg");
 
   /* Full height */
   height: 90vh;
 }
 
 .parallax-box-1 {
-  top: 50%;
+  bottom: 50px;
   text-align: left;
 }
 
@@ -251,7 +272,7 @@ img.down-arrow {
 
 .parallax-2 {
   /* The image used */
-  background-image: url("../img/AdobeStock_206906006_Preview.jpg");
+  background-image: url("../img/who-are-you.jpg");
 
   /* Full height */
   height: 70vh;
@@ -285,7 +306,7 @@ img.down-arrow {
 }
 .parallax-3 {
   /* The image used */
-  background-image: url("../img/AdobeStock_112397497_Preview.jpeg");
+  background-image: url("../img/training-and-facilitation.jpg");
 
   /* Full height */
   height: 70vh;
@@ -295,7 +316,7 @@ img.down-arrow {
 
 .parallax-4 {
   /* The image used */
-  background-image: url("../img/AdobeStock_246069541_Preview.jpeg");
+  background-image: url("../img/coffee.jpg");
 
   /* Full height */
   height: 70vh;
@@ -443,31 +464,32 @@ form.contact-form .form-group {
 
 
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   nav {
-    height: 80px;
+    height: auto;
   }
   nav .title {
-    font-size: 20px;
-    width: 200px;
-    line-height: 30px;
-    margin-top: 10px;
-    margin-left: 15px;
+    width: 100%;
+    text-align: center;
   }
-  nav a {
+  nav .title img {
+    width: 80vw;
     margin-top: 20px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    text-align: center;
+    float: none;
+    position: inherit;
   }
-  .parallax-box-1 {
-    top: 40%;
+  nav button {
+    margin-top: 10px;
+    margin-right: 0;
+    width: 100%;
   }
+
 }
 
 @media (max-width: 375px) {
-  nav .title {
-    font-size: 16px;
-    width: 150px;
-    line-height: 30px;
-    margin-top: 10px;
-  }
+
 }

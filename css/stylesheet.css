@@ -951,6 +951,19 @@ img.round {
   /*box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);*/
 }
 
+
+
+
+
+
+.pad-top {
+  padding-top: 100px;
+}
+
+.dip-img {
+  margin-bottom: -1px;
+}
+
 .project.dark p, .project.dark ul li, .project.dark  h1, .project.dark h2, .project.dark h3, .project.dark a.secondary-button, .project.dark a.primary-button, .project.dark nav, .project.dark nav .title a, .project.dark nav .burger {
   color: #fff;
 }
@@ -989,6 +1002,51 @@ img.round {
   background-color: #fff;
   color: #000;
 }
+
+
+
+
+
+
+.project.blue p, .project.blue ul li, .project.blue  h1, .project.blue h2, .project.blue h3, .project.blue a.secondary-button, .project.blue a.primary-button, .project.blue nav, .project.blue nav .title a, .project.blue nav .burger {
+  color: #fff;
+}
+
+.project.blue {
+  background-color: #10364A;
+}
+
+.project.blue .project-top {
+  background: linear-gradient(180deg, #081B2A 60%, #10364A 40%);
+  text-align: center;
+}
+
+.project.blue .low-light {
+  background-color: #081B2A;
+}
+
+.project.blue a.project-next .container-fluid {
+  background-color: #081B2A;
+}
+
+.project.blue a.project-next:hover .container-fluid {
+  background-color: #000;
+  transition: ease 0.4s;
+}
+
+.project.blue a.primary-button {
+  border: solid #fff 1px;
+}
+
+.project.blue a.primary-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
 
 .dog-data .demo-container {
   background-color: #ea9a69;
@@ -1143,14 +1201,22 @@ img.round {
     display: none;
   }
 
-  nav {
+  /**nav {
     background-color: #fff;
-  }
+  }**/
 
   .project-top img {
     height: auto;
     width: 50vw;
     padding-top: 80px;
+  }
+
+  nav div.title {
+    margin-left: 15px;
+  }
+
+  nav span.burger {
+    margin-right: 15px;
   }
 }
 

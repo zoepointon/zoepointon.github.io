@@ -444,15 +444,20 @@ form.contact-form .form-group {
 
   h2 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 45px;
   }
 
   h3 {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 40px;
   }
 
   p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  ul li {
     font-size: 18px;
     line-height: 24px;
   }

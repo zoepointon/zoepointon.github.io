@@ -230,9 +230,9 @@ p.date {
    color: #000;
    display: block;
    transition: 0.3s;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Frank Ruhl Libre', serif;
    font-weight: 200;
-   letter-spacing: 4px;
+   letter-spacing: 1px;
    transition: ease 0.5s;
    text-align: center;
 }
@@ -295,15 +295,15 @@ nav span.burger {
   margin-right: 30px;
   line-height: 60px;
   z-index: 10;
-  color: #000;
+  color: #b9babb;
 }
 
 nav div.title a {
   line-height: 60px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 200;
   font-size: 30px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: #000;
   /**width: 100%;**/
   z-index: -1;
@@ -336,14 +336,13 @@ nav div.title {
 p {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
-  opacity: 0.6;
-  line-height: 36px;
+  line-height: 34px;
 }
 
 p.big-paragraph {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 span.highlight-text {
@@ -351,28 +350,24 @@ span.highlight-text {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 200;
   color: #000;
-  font-size: 24px;
-  letter-spacing: 4px;
+  font-size: 28px;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 200;
   font-size: 34px;
-  letter-spacing: 2px;
   line-height: 48px;
 }
 
 h3 {
   font-family: 'Work', sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 200;
   color: #000;
   font-size: 14px;
-  letter-spacing: 2px;
   padding-bottom: 10px;
 }
 
@@ -381,7 +376,6 @@ h4 {
   font-weight: 300;
   color: #000;
   font-size: 18px;
-  letter-spacing: 2px;
 }
 
 h4 .bold {
@@ -397,10 +391,9 @@ ul {
 ul li {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
-  padding-bottom: 20px;
-  opacity: 0.6;
+  padding-bottom: 15px;
 }
 
 .center {
@@ -449,8 +442,8 @@ ul li {
 
 
 
-div.top-text {
-  bottom: 100px;
+div.top-text, div.about-top-text {
+  bottom: 60px;
   position: absolute;
 }
 
@@ -469,8 +462,9 @@ div.top-text {
 }
 
 div.top-text p, div.about-top-text p {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 div.bio {
@@ -479,7 +473,7 @@ div.bio {
 }
 
 div.bio p {
-  text-align: center;
+  text-align: left;
 }
 
 .icon h1 {
@@ -504,10 +498,10 @@ div.bio p {
 
 
 .primary-button {
-  padding: 5px 24px;
-  font-family: 'Oswald', sans-serif;
+  padding: 6px 28px;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-align: center;
   color: #000;
   background-color: transparent;
@@ -528,76 +522,12 @@ div.bio p {
 
 
 a.secondary-button {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: #000;
   margin-left: 40px;
   transition: ease 0.3s;
-}
-
-.outline-button {
-  width: 140px;
-  height: 40px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #000;
-  background-color: transparent;
-  border: solid #000 1px;
-  border-radius: 0;
-  cursor: pointer;
-  transition: ease 0.3s;
-}
-
-.outline-button:hover {
-  background-color: #000;
-  color: #fff;
-  transition: ease 0.3s;
-}
-
-
-.pulse-button {
-  width: 140px;
-  height: 40px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #000;
-  background-color: transparent;
-  border: solid #000 1px;
-  border-radius: 0;
-  cursor: pointer;
-  transition: ease 0.3s;
-}
-
-.pulse-button {
-  position: relative;
-  width: 140px;
-  height: 40px;
-  border: solid #000 1px;
-  cursor: pointer;
-  transition: ease 0.3s;
-}
-.pulse-button:focus, .outline-button:focus {
-  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
-  outline: none;
-}
-
-
-
-.top-text button.pluse-button {
-  color: #fff;
-  border: solid #fff 1px;
-}
-
-.pulse-button:hover {
-  background-color: #000;
-  color: #fff;
-  transition: ease 0.3s;
-  outline: none;
 }
 
 
@@ -1069,7 +999,7 @@ img.round {
 }
 
 .demo-video-text p {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 
@@ -1092,7 +1022,7 @@ img.round {
 
 @media screen and (max-width: 767px) {
   div.home-top .myvideo-mask, div.about-top .about-top-myvideo-mask, div.about-uni .about-uni-myvideo-mask {
-    height: 250px;
+    height: 50vh;
     padding-right: 0;
     padding-left: 0;
   }
@@ -1111,7 +1041,7 @@ img.round {
   }
 
   div.top-text {
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 0;
     position: relative;
   }
@@ -1132,6 +1062,9 @@ img.round {
     padding-top: 30px;
     padding-bottom: 60px;
   }
+  p {
+    font-size: 16px;
+  }
 }
 
 
@@ -1150,10 +1083,6 @@ img.round {
 
   div.panicapp-text p, div.cameo-text p, div.around-text p, div.binkybear-text p, div.lomax-text p {
     display: none;
-  }
-
-  div.panicapp-text button, div.cameo-text button, div.around-text button, div.binkybear-text button, div.lomax-text button {
-    margin-top: 20px;
   }
 
   div.icons{
@@ -1177,7 +1106,7 @@ img.round {
   }
 
   div.bio p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

@@ -157,7 +157,7 @@ div.project-image-text {
 
 
 .top-image-container {
-  padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -447,7 +447,18 @@ ul li {
   text-align: center;
 }
 
+a {
+  color: #000;
+}
 
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
 
 
 
@@ -536,8 +547,22 @@ div.bio p {
   margin-bottom: 20px;
 }
 
+.index-social {
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
+.index-social a {
+  font-size: 22px;
+  margin: 0 12px;
+  color: #000;
+}
 
+.index-social a:hover {
+  opacity: 0.4;
+}
 
 
 
@@ -586,6 +611,12 @@ div.page-head {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  div.page-head {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
 
 
 div.top-portfolio {
@@ -615,7 +646,7 @@ div.top-portfolio h1 {
 }
 
 .item img:hover, .item a:focus {
-  border: #000 solid 1px;
+  opacity: 0.6;
   transition: ease 0.5s;
   text-decoration: none;
 }
@@ -773,7 +804,7 @@ div.top-portfolio h1 {
 .footer i {
   font-size: 22px;
   margin: 0 12px;
-  color: #000
+  color: #000;
 }
 
 .footer i:hover {
@@ -985,10 +1016,19 @@ img.round {
   color: #000;
 }
 
+.project.dark nav.desktop li a {
+  color: #fff;
+}
+
 body.project.lomax, body.project.dog-data{
   background-color: #fff;
 }
 
+@media screen and (min-width: 991px) {
+  .home nav.desktop li a.about-link {
+    color: #fff;
+  }
+}
 
 
 
@@ -1037,11 +1077,11 @@ body.project.lomax, body.project.dog-data{
 }
 
 .lomax .demo-container {
-  background-color: #278FF1;
+  background-color: #D9D9D9;
 }
 
 .lomax .project-top {
-  background: linear-gradient(180deg, #278FF1 60%, #fff 40%);
+  background: linear-gradient(180deg, #D9D9D9 60%, #fff 40%);
 }
 
 

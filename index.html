@@ -1,89 +1,750 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="cache-control" content="no-cache">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layers — Dress for the Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <title>Zoe Ellen Pointon</title>
+    :root {
+      --bg: #f7f4f0;
+      --white: #ffffff;
+      --dark: #1c1917;
+      --gray: #78716c;
+      --gray-light: #a8a29e;
+      --border: #e7e0d8;
+      --accent: #8b5e3c;
+      --accent-light: #fdf0e8;
+      --accent-mid: #f2d9c8;
+    }
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      min-height: 100vh;
+    }
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 52px 24px 36px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
 
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--dark);
+    }
 
+    header p {
+      color: var(--gray-light);
+      font-weight: 300;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    /* ── Search ── */
+    .search-section {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 36px 24px 0;
+    }
 
-    <script src="https://kit.fontawesome.com/4514891e99.js"></script>
+    .search-row {
+      display: flex;
+      gap: 10px;
+    }
 
+    .search-input {
+      flex: 1;
+      padding: 14px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      background: var(--white);
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
 
+    .search-input::placeholder { color: var(--gray-light); }
 
-    <!-- animsition.css -->
-    <link rel="stylesheet" href="../css/animsition.min.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- animsition.js -->
-    <script src="../js/animsition.min.js"></script>
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.12);
+    }
 
+    .btn {
+      padding: 14px 22px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    .btn-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
 
+    .btn-dark:hover { background: #333; }
 
+    .btn-outline {
+      background: var(--white);
+      color: var(--dark);
+      border: 1.5px solid var(--border);
+    }
 
+    .btn-outline:hover {
+      background: var(--bg);
+      border-color: var(--gray-light);
+    }
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140335273-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    .location-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      margin-top: 12px;
+      padding: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--gray);
+      transition: color 0.2s;
+    }
 
-      gtag('config', 'UA-140335273-1');
-    </script>
+    .location-btn:hover { color: var(--accent); }
 
+    /* ── Main ── */
+    main {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
 
+    /* ── Status states ── */
+    .status-msg {
+      text-align: center;
+      padding: 60px 24px;
+    }
 
-    <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"position":"bottom-right","padding":"small","margin":"none","fontsize":"small","content":{"message":"This website uses cookies to gain insight into user behaviour. ","button":"x","href":"https://zoepointon.github.io/cookie-policy.html","link":"View Policy"}})});</script>
+    .status-msg .emoji { font-size: 2.5rem; }
+    .status-msg p { margin-top: 12px; color: var(--gray); font-size: 0.95rem; }
 
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto;
+    }
 
-  </head>
+    @keyframes spin { to { transform: rotate(360deg); } }
 
-  <body class="home">
-    <div id="nav-placeholder"></div>
+    /* ── Weather card ── */
+    .weather-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
 
+    .weather-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-    <div class="container-fluid home-top">
-      <div class="row">
-        <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-1">
-          <div class="page-head">
-            <h2>Zoe Pointon, UX Designer @ Sky 🌌</h2>
-            <h1>Product Designer</h1>
-            <p>I am a Product Design passionate about data intelligence. I strive to create insights driven user experiences.</p>
-            <br>
-            <a href="portfolio.html" class="primary-button">View Work</a>
-          </div>
+    .weather-icon-big { font-size: 3.8rem; line-height: 1; }
+
+    .weather-temp {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .weather-city {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .weather-cond {
+      color: var(--gray);
+      font-size: 0.85rem;
+      font-weight: 300;
+    }
+
+    .weather-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 32px;
+    }
+
+    .weather-stat label {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-light);
+      margin-bottom: 2px;
+      font-weight: 500;
+    }
+
+    .weather-stat span {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* ── Outfit section ── */
+    .outfit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .outfit-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
+
+    .outfit-subtitle {
+      color: var(--gray);
+      font-size: 0.82rem;
+      margin-top: 5px;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .reasoning {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent-mid);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin-bottom: 28px;
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    /* ── Outfit grid ── */
+    .outfit-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .outfit-card {
+      background: var(--white);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      width: 175px;
+      flex-shrink: 0;
+      cursor: default;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .outfit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.09);
+    }
+
+    .outfit-card-img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+      background: var(--bg);
+    }
+
+    .outfit-card-body { padding: 14px 14px 16px; }
+
+    .outfit-card-cat {
+      font-size: 0.67rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .outfit-card-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .outfit-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      color: var(--gray);
+      font-weight: 300;
+    }
+
+    .color-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+
+    /* ── Utility ── */
+    .hidden { display: none !important; }
+
+    @media (max-width: 640px) {
+      header h1 { font-size: 2.4rem; }
+      .weather-card { flex-direction: column; align-items: flex-start; }
+      .weather-right { grid-template-columns: 1fr 1fr; }
+      .outfit-grid { justify-content: center; }
+      .outfit-card { width: 155px; }
+      .outfit-card-img { height: 185px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Layers</h1>
+  <p>Dress for the weather</p>
+</header>
+
+<div class="search-section">
+  <div class="search-row">
+    <input
+      type="text"
+      class="search-input"
+      id="cityInput"
+      placeholder="Enter a city…"
+      autocomplete="off"
+      spellcheck="false"
+    >
+    <button class="btn btn-dark" id="searchBtn">Get outfit</button>
+  </div>
+  <button class="location-btn" id="locationBtn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8" opacity=".3"/></svg>
+    Use my location
+  </button>
+</div>
+
+<main id="appMain">
+
+  <div id="stateLoading" class="status-msg hidden">
+    <div class="spinner"></div>
+    <p>Checking the forecast…</p>
+  </div>
+
+  <div id="stateError" class="status-msg hidden">
+    <div class="emoji">☁️</div>
+    <p id="errorMsg">Something went wrong. Please try again.</p>
+  </div>
+
+  <div id="stateEmpty" class="status-msg">
+    <div class="emoji" style="font-size:3rem">🧥</div>
+    <p>Enter a city above to get your personalised outfit recommendation.</p>
+  </div>
+
+  <div id="stateContent" class="hidden">
+
+    <!-- Weather card -->
+    <div class="weather-card">
+      <div class="weather-left">
+        <div class="weather-icon-big" id="wIcon">☀️</div>
+        <div>
+          <div class="weather-city" id="wCity">London</div>
+          <div class="weather-cond" id="wCond">Clear sky</div>
+          <div class="weather-temp" id="wTemp">18°</div>
         </div>
-        <div class="col-md-5 offset-md-1 col-lg-6 offset-lg-1 top-image-container myvideo-mask video-bg">
-          <div class="top-image"></div>
-        <!--  <video autoplay muted loop class="myVideo">
-            <source src="img/hero.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video> -->
+      </div>
+      <div class="weather-right">
+        <div class="weather-stat">
+          <label>High / Low</label>
+          <span id="wHL">— / —</span>
+        </div>
+        <div class="weather-stat">
+          <label>Feels like</label>
+          <span id="wFeels">—</span>
+        </div>
+        <div class="weather-stat">
+          <label>Wind</label>
+          <span id="wWind">—</span>
+        </div>
+        <div class="weather-stat">
+          <label>Precipitation</label>
+          <span id="wPrecip">—</span>
         </div>
       </div>
     </div>
 
-    <div class="index-social">
-      <a target="_blank" href="https://medium.com/@zoepointon"><i class="fab fa-medium-m"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/zoepointon/"><i class="fab fa-linkedin-in"></i></a>
-      <a target="_blank" href="https://github.com/zoepointon"><i class="fab fa-github"></i></a>
+    <!-- Outfit -->
+    <div class="outfit-header">
+      <div>
+        <div class="outfit-title">Today's outfit</div>
+        <div class="outfit-subtitle" id="outfitSub"></div>
+      </div>
+      <button class="btn btn-outline" id="refreshBtn">↺ Different look</button>
     </div>
 
-    <script src="js/script-all.js"></script>
-  </body>
+    <div class="reasoning" id="reasoning"></div>
+
+    <div class="outfit-grid" id="outfitGrid"></div>
+
+  </div>
+</main>
+
+<script>
+// ── Wardrobe data ────────────────────────────────────────────────────────────
+const wardrobe = [
+  { id:1,  name:'Down Coat',          img:'Images/DownCoat-Perspective.png',      cat:'Coat',        colour:'Black',       fabric:'Polyester',     desc:'Long black padded coat with a hood' },
+  { id:2,  name:'Raincoat',           img:'Images/RainCoat-Perspective.png',       cat:'Coat',        colour:'Silver',      fabric:'PES',           desc:'Waterproof mid length raincoat with a hood' },
+  { id:3,  name:'Trench Coat',        img:'Images/TrenchCoat-Perspective.png',     cat:'Coat',        colour:'Light Cream', fabric:'Gabardine',     desc:'Cotton lined breathable coat with a collar' },
+  { id:4,  name:'Leather Jacket',     img:'Images/LeatherJacket-Perspective.png',  cat:'Jacket',      colour:'Black',       fabric:'Leather',       desc:'Button up leather jacket cropped to waist' },
+  { id:5,  name:'Funnel Neck Jumper', img:'Images/BigJumper-Perspective.png',      cat:'Jumper',      colour:'Red',         fabric:'Wool',          desc:'Warm over sized jumper with a funnel neck' },
+  { id:6,  name:'Cardigan',           img:'Images/Cardigan-Perspective.png',       cat:'Cardigan',    colour:'Grey',        fabric:'Wool',          desc:'Round neck button up cardigan' },
+  { id:7,  name:'Sweater Vest',       img:'Images/SweaterVest-Perspective.png',    cat:'Sweater Vest',colour:'Navy',        fabric:'Wool',          desc:'Sleeveless sweater vest' },
+  { id:8,  name:'Cotton Shirt',       img:'Images/CottonShirt-Perspective.png',    cat:'Shirt',       colour:'White',       fabric:'Cotton',        desc:'Long sleeve classic white shirt' },
+  { id:9,  name:'Linen Shirt',        img:'Images/LinenShirt-Perspective.png',     cat:'Shirt',       colour:'Blue Stripe', fabric:'Linen',         desc:'Long sleeve light weight linen shirt' },
+  { id:10, name:'Merino Top',         img:'Images/MerinoTop--Perspective.png',     cat:'Top',         colour:'Grey',        fabric:'Merino',        desc:'Long sleeve fine knit merino top' },
+  { id:11, name:'T-shirt',            img:'Images/Tshirt-Perspective.png',         cat:'Top',         colour:'White',       fabric:'Cotton',        desc:'Short sleeve basic white t-shirt' },
+  { id:12, name:'Summer Top',         img:'Images/SummerTop-Perspective.png',      cat:'Top',         colour:'Red',         fabric:'Cotton',        desc:'Light summer top with thin straps' },
+  { id:13, name:'Vest',               img:'Images/Vest-Perspective.png',           cat:'Top',         colour:'Black',       fabric:'Cotton/Elastic',desc:'Stretchy vest top with thin straps' },
+  { id:14, name:'White Jeans',        img:'Images/WhiteJeans-Perspective.png',     cat:'Trousers',    colour:'White',       fabric:'Denim',         desc:'Baggy white jeans with a turn up' },
+  { id:15, name:'Black Trousers',     img:'Images/BlackTrousers-Perspective.png',  cat:'Trousers',    colour:'Black',       fabric:'Wool',          desc:'Smart trousers with pleats down the front' },
+  { id:16, name:'Linen Trousers',     img:'Images/LinenTrousers-Perspective.png',  cat:'Trousers',    colour:'Blue Stripe', fabric:'Linen',         desc:'Loose light trousers with elasticated waist' },
+  { id:17, name:'Long Skirt',         img:'Images/LongSkirt-Perspective.png',      cat:'Skirt',       colour:'Black',       fabric:'Cotton',        desc:'Long flowing skirt with gathering' },
+  { id:18, name:'Denim Shorts',       img:'Images/DenimShorts-Perspective.png',    cat:'Shorts',      colour:'Dark Blue',   fabric:'Denim',         desc:'Dark blue denim mid thigh shorts' },
+  { id:19, name:'Cotton Shorts',      img:'Images/RedShorts-Perspective.png',      cat:'Shorts',      colour:'Red',         fabric:'Cotton',        desc:'Loose short shorts with elasticated waist' },
+  { id:20, name:'Short Dress',        img:'Images/ShortDress-Perspective.png',     cat:'Dress',       colour:'Black',       fabric:'Linen',         desc:'Short loose linen dress' },
+  { id:21, name:'Midi Dress',         img:'Images/RedDress-Perspective.png',       cat:'Dress',       colour:'Red',         fabric:'Cotton',        desc:'Versatile midi dress, up or down' },
+  { id:22, name:'Sunglasses',         img:'Images/Sunglasses-Perspective.png',     cat:'Sunglasses',  colour:'Red',         fabric:'Plastic',       desc:'Rectangle sunglasses with dark red frames' },
+  { id:23, name:'Baseball Hat',       img:'Images/Hat-Perspective.png',            cat:'Hat',         colour:'Grey',        fabric:'Cotton',        desc:'Plain baseball style hat' },
+  { id:24, name:'Beanie',             img:'Images/Beanie-Perspective.png',         cat:'Hat',         colour:'Grey',        fabric:'Merino',        desc:'Warm knitted wooly hat' },
+];
+
+function byName(name) { return wardrobe.find(c => c.name === name); }
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+// ── Weather helpers ──────────────────────────────────────────────────────────
+function weatherInfo(code) {
+  if (code === 0)        return { label: 'Clear sky',      icon: '☀️',  rain: false, sunny: true  };
+  if (code <= 2)         return { label: 'Mainly clear',   icon: '🌤️', rain: false, sunny: true  };
+  if (code === 3)        return { label: 'Overcast',        icon: '☁️',  rain: false, sunny: false };
+  if (code <= 48)        return { label: 'Foggy',           icon: '🌫️', rain: false, sunny: false };
+  if (code <= 55)        return { label: 'Drizzle',         icon: '🌦️', rain: true,  sunny: false };
+  if (code <= 65)        return { label: 'Rain',            icon: '🌧️', rain: true,  sunny: false };
+  if (code <= 75)        return { label: 'Snow',            icon: '🌨️', rain: false, sunny: false, snow: true };
+  if (code <= 82)        return { label: 'Rain showers',   icon: '🌦️', rain: true,  sunny: false };
+  if (code <= 86)        return { label: 'Snow showers',   icon: '❄️',  rain: false, sunny: false, snow: true };
+  return                        { label: 'Thunderstorm',   icon: '⛈️', rain: true,  sunny: false };
+}
+
+// ── Outfit algorithm ─────────────────────────────────────────────────────────
+function buildOutfit(temp, code) {
+  const { rain, sunny, snow } = weatherInfo(code);
+  const outfit = {};
+  const notes = [];
+
+  // — Outer layer —
+  if (temp < 4 || snow) {
+    outfit.outer = 'Down Coat';
+    notes.push('a down coat for the freezing cold');
+  } else if (temp < 10 && rain) {
+    outfit.outer = pick(['Raincoat', 'Down Coat']);
+    notes.push('a waterproof layer to stay dry');
+  } else if (temp < 10) {
+    outfit.outer = pick(['Trench Coat', 'Down Coat', 'Raincoat']);
+    notes.push('a warm coat for the chilly air');
+  } else if (temp < 16) {
+    outfit.outer = rain ? 'Raincoat' : pick(['Leather Jacket', 'Trench Coat', 'Raincoat']);
+    notes.push(rain ? 'a raincoat to keep you dry' : 'a light jacket for the cooler temperatures');
+  } else if (temp < 20 && rain) {
+    outfit.outer = 'Raincoat';
+    notes.push('a raincoat because of the showers');
+  }
+  // above 20°C and dry → no outer layer
+
+  // — Mid layer —
+  if (temp < 7) {
+    outfit.mid = pick(['Funnel Neck Jumper', 'Cardigan']);
+    notes.push('a cosy knit layer underneath');
+  } else if (temp < 13) {
+    outfit.mid = pick(['Funnel Neck Jumper', 'Cardigan', 'Sweater Vest']);
+    notes.push('a warm mid layer');
+  } else if (temp < 19 && Math.random() > 0.45) {
+    outfit.mid = pick(['Cardigan', 'Sweater Vest']);
+  }
+
+  // — Dress or separate top + bottom? —
+  const tryDress = temp > 18 && Math.random() > 0.5;
+
+  if (tryDress) {
+    outfit.dress = pick(['Short Dress', 'Midi Dress']);
+    notes.push(`a ${outfit.dress.toLowerCase()} for the warm day`);
+    // Jumper over dress looks odd
+    if (outfit.mid === 'Funnel Neck Jumper') delete outfit.mid;
+  } else {
+    // Top
+    if (temp < 10) {
+      outfit.top = pick(['Cotton Shirt', 'Merino Top']);
+    } else if (temp < 16) {
+      outfit.top = pick(['Cotton Shirt', 'Merino Top', 'Linen Shirt']);
+    } else if (temp < 22) {
+      outfit.top = pick(['Cotton Shirt', 'Linen Shirt', 'T-shirt', 'Merino Top']);
+    } else if (temp < 27) {
+      outfit.top = pick(['T-shirt', 'Summer Top', 'Linen Shirt']);
+    } else {
+      outfit.top = pick(['Summer Top', 'Vest', 'T-shirt']);
+    }
+
+    // Bottom
+    if (temp < 8) {
+      outfit.bottom = pick(['Black Trousers', 'White Jeans']);
+    } else if (temp < 14) {
+      outfit.bottom = pick(['Black Trousers', 'White Jeans', 'Long Skirt']);
+    } else if (temp < 20) {
+      outfit.bottom = pick(['White Jeans', 'Black Trousers', 'Linen Trousers', 'Long Skirt']);
+    } else if (temp < 25) {
+      outfit.bottom = pick(['Linen Trousers', 'Long Skirt', 'Denim Shorts', 'White Jeans']);
+    } else {
+      outfit.bottom = pick(['Denim Shorts', 'Cotton Shorts', 'Long Skirt']);
+    }
+  }
+
+  // — Accessories —
+  if (temp < 5 || snow) {
+    outfit.hat = 'Beanie';
+    notes.push('a beanie to keep warm');
+  } else if (sunny && temp > 20 && Math.random() > 0.4) {
+    outfit.hat = 'Baseball Hat';
+  }
+
+  if (sunny && temp > 17) {
+    outfit.sunglasses = 'Sunglasses';
+    notes.push('sunglasses for the sunshine');
+  }
+
+  // — Reasoning sentence —
+  let lead;
+  if (temp < 4)       lead = `At a freezing ${Math.round(temp)}°C, we've bundled you up with`;
+  else if (temp < 10) lead = `It's a cold ${Math.round(temp)}°C out there — we've put together`;
+  else if (temp < 16) lead = `A cool ${Math.round(temp)}°C day calls for`;
+  else if (temp < 22) lead = `${Math.round(temp)}°C and pleasant — here's a relaxed look featuring`;
+  else if (temp < 27) lead = `A lovely ${Math.round(temp)}°C day! We're keeping things light with`;
+  else                lead = `${Math.round(temp)}°C — it's warm out! Time for`;
+
+  const reason = notes.length
+    ? `${lead} ${notes.join(', ')}.`
+    : `${lead} a balanced outfit for the conditions.`;
+
+  return { outfit, reason };
+}
+
+// ── Colour → hex ─────────────────────────────────────────────────────────────
+const colourHex = {
+  'Black': '#2d2d2d', 'White': '#f5f5f5', 'Grey': '#9ca3af',
+  'Red': '#dc2626',   'Silver': '#c0c0c0', 'Light Cream': '#fef9c3',
+  'Navy': '#1e3a5f',  'Blue Stripe': '#60a5fa', 'Dark Blue': '#1e40af',
+};
+function hexFor(colour) { return colourHex[colour] || '#d1d5db'; }
+
+// ── Render ───────────────────────────────────────────────────────────────────
+function renderOutfit(outfitObj) {
+  const grid = document.getElementById('outfitGrid');
+  grid.innerHTML = '';
+  // Logical layering order
+  const slots = ['hat', 'outer', 'mid', 'top', 'dress', 'bottom', 'sunglasses'];
+  for (const slot of slots) {
+    const name = outfitObj[slot];
+    if (!name) continue;
+    const item = byName(name);
+    if (!item) continue;
+
+    const card = document.createElement('div');
+    card.className = 'outfit-card';
+    card.innerHTML = `
+      <img class="outfit-card-img" src="${item.img}" alt="${item.name}"
+           onerror="this.style.background='var(--bg)';this.style.height='210px';this.removeAttribute('src')">
+      <div class="outfit-card-body">
+        <div class="outfit-card-cat">${item.cat}</div>
+        <div class="outfit-card-name">${item.name}</div>
+        <div class="outfit-card-meta">
+          <span class="color-dot" style="background:${hexFor(item.colour)}"></span>
+          ${item.colour} &middot; ${item.fabric}
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  }
+}
+
+// ── State helpers ────────────────────────────────────────────────────────────
+function show(id) {
+  ['stateLoading','stateError','stateEmpty','stateContent'].forEach(s => {
+    document.getElementById(s).classList.toggle('hidden', s !== id);
+  });
+}
+
+// ── Weather fetch ────────────────────────────────────────────────────────────
+let lastWeather = null;
+
+async function loadWeatherCoords(lat, lon, cityLabel) {
+  const url = `https://api.open-meteo.com/v1/forecast` +
+    `?latitude=${lat}&longitude=${lon}` +
+    `&current=temperature_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m` +
+    `&daily=temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=auto`;
+
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Weather API error');
+  const d = await res.json();
+
+  lastWeather = {
+    city: cityLabel,
+    temp: d.current.temperature_2m,
+    feels: d.current.apparent_temperature,
+    code: d.current.weather_code,
+    wind: d.current.wind_speed_10m,
+    precip: d.current.precipitation,
+    high: d.daily.temperature_2m_max[0],
+    low: d.daily.temperature_2m_min[0],
+  };
+
+  paintWeather(lastWeather);
+  paintOutfit(lastWeather);
+  show('stateContent');
+}
+
+function paintWeather(w) {
+  const info = weatherInfo(w.code);
+  document.getElementById('wIcon').textContent  = info.icon;
+  document.getElementById('wCity').textContent  = w.city;
+  document.getElementById('wCond').textContent  = info.label;
+  document.getElementById('wTemp').textContent  = `${Math.round(w.temp)}°`;
+  document.getElementById('wHL').textContent    = `${Math.round(w.high)}°C / ${Math.round(w.low)}°C`;
+  document.getElementById('wFeels').textContent = `${Math.round(w.feels)}°C`;
+  document.getElementById('wWind').textContent  = `${Math.round(w.wind)} km/h`;
+  document.getElementById('wPrecip').textContent = `${w.precip} mm`;
+}
+
+function paintOutfit(w) {
+  const { outfit, reason } = buildOutfit(w.temp, w.code);
+  document.getElementById('reasoning').textContent = reason;
+  document.getElementById('outfitSub').textContent =
+    `Curated for ${w.city} · ${new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long' })}`;
+  renderOutfit(outfit);
+}
+
+async function searchCity(city) {
+  show('stateLoading');
+  try {
+    const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json`;
+    const geoRes = await fetch(geoUrl);
+    if (!geoRes.ok) throw new Error('Geocoding error');
+    const geo = await geoRes.json();
+
+    if (!geo.results?.length) {
+      document.getElementById('errorMsg').textContent = `Couldn't find "${city}" — try another city name.`;
+      show('stateError');
+      return;
+    }
+
+    const { latitude, longitude, name, country } = geo.results[0];
+    await loadWeatherCoords(latitude, longitude, `${name}, ${country}`);
+  } catch (e) {
+    document.getElementById('errorMsg').textContent = 'Could not load the weather. Please check your connection.';
+    show('stateError');
+  }
+}
+
+function useLocation() {
+  if (!navigator.geolocation) {
+    document.getElementById('errorMsg').textContent = 'Geolocation is not supported by your browser.';
+    show('stateError');
+    return;
+  }
+  show('stateLoading');
+  navigator.geolocation.getCurrentPosition(
+    async pos => {
+      try {
+        const { latitude, longitude } = pos.coords;
+        const revRes = await fetch(
+          `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
+          { headers: { 'Accept-Language': 'en' } }
+        );
+        const rev = await revRes.json();
+        const city = rev.address?.city || rev.address?.town || rev.address?.village || 'Your location';
+        await loadWeatherCoords(latitude, longitude, city);
+      } catch {
+        // fallback without city name
+        try {
+          await loadWeatherCoords(pos.coords.latitude, pos.coords.longitude, 'Your location');
+        } catch {
+          document.getElementById('errorMsg').textContent = 'Could not load weather for your location.';
+          show('stateError');
+        }
+      }
+    },
+    () => {
+      document.getElementById('errorMsg').textContent = 'Location access denied. Please enter a city instead.';
+      show('stateError');
+    }
+  );
+}
+
+// ── Events ───────────────────────────────────────────────────────────────────
+document.getElementById('searchBtn').addEventListener('click', () => {
+  const city = document.getElementById('cityInput').value.trim();
+  if (city) searchCity(city);
+});
+
+document.getElementById('cityInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const city = e.target.value.trim();
+    if (city) searchCity(city);
+  }
+});
+
+document.getElementById('locationBtn').addEventListener('click', useLocation);
+
+document.getElementById('refreshBtn').addEventListener('click', () => {
+  if (lastWeather) paintOutfit(lastWeather);
+});
+</script>
+</body>
 </html>

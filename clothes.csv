@@ -1,0 +1,25 @@
+id,name,image square,image perspective,category,description,colour,fabric
+1,Down Coat,images/DownCoat-Square.png,images/DownCoat-Perspective.png,Coat,Long black padded coat with a hood,Black,Polyester
+2,Raincoat,images/RainCoat-Square.png,images/RainCoat-Perspective.png,Coat,Waterproof mid length raincoat with a hood,Silver,PES
+3,Trench Coat,images/TrenchCoat-Square.png,images/TrenchCoat-Perspective.png,Coat,Cotton lined breathable with a collar no belt,Light Cream,Gabardine
+4,Leather Jacket,images/LeatherJacket-Square.png,images/LeatherJacket-Perspective.png,Jacket,Button up leather jacket cropped to waist,Black,Leather
+5,Funnel Neck Jumper,images/BigJumper-Square.png,images/BigJumper-Perspective.png,Jumper,Warm over sized jumper with a funnel neck,Red,Wool
+6,Cardigan,images/Cardigan-Square.png,images/Cardigan-Perspective.png,Cardigan,Round neck button up cardigan,Grey,Wool
+7,Sweater Vest,images/SweaterVest-Square.png,images/SweaterVest-Perspective.png,Sweater Vest,Sleeveless sweater vest,Navy,Wool
+8,Cotton Shirt,images/CottonShirt-Square.png,imagesCottonShirt/-Perspective.png,Shirt,Long sleeve classic white shirt,White,Cotton
+9,Linen Shirt,images/LinenShirt-Square.png,images/LinenShirt-Perspective.png,Shirt,Long sleeve light weight linen shirt,Blue Stripe,Linen
+10,Merino Top,images/MerinoTop-Square.png,images/MerinoTop-Perspective.png,Top,Long sleeve fine knit merino top,Grey,Merino
+11,T-shirt,images/Tshirt-Square.png,images/Tshirt-Perspective.png,Top,Short sleeve basic white t-shirt,White,Cotton
+12,Summer Top,images/SummerTop-Square.png,images/SummerTop-Perspective.png,Top,Light summer top with thin straps ,Red,Cotton
+13,Vest,images/Vest-Square.png,images/Vest-Perspective.png,Top,Stretchy vest top with thin straps,Black,Cotton/Elastic
+14,White Jeans,images/WhiteJeans-Square.png,images/WhiteJeans-Perspective.png,Trousers,Baggy white jeans with a turn up at the bottom,White,Denim
+15,Black Trousers,images/BlackTrousers-Square.png,images/BlackTrousers-Perspective.png,Trousers,Smart trousers with pleats down the front,Black,Wool
+16,Linen Trousers,images/LinenTrousers-Square.png,images/LinenTrousers-Perspective.png,Trousers,Loose light trousers with elasticated waist,Blue Stripe,Linen
+17,Long Skirt,images/LongSkirt-Square.png,images/LongSkirt-Perspective.png,Skirt,Long flowing skirt with gathering in the middle,Black,Cotton
+18,Denim Shorts,images/DenimShorts-Square.png,images/DenimShorts-Perspective.png,Shorts,Dark blue denim mid thigh shorts ,Dark Blue,Denim
+19,Cotton Shorts,images/RedShorts-Square.png,images/RedShorts-Perspective.png,Shorts,Loose short shorts with elasticated waist,Red,Cotton
+20,Short Dress,images/ShortDress-Square.png,images/ShortDress-Perspective.png,Dress,Short loose linen dress ,Black,Linen
+21,Midi Dress,images/RedDress-Square.png,images/RedDress-Perspective.png,Dress,Can be dressed up or down midi dress,Red,Cotton
+22,Sunglasses,images/Sunglasses-Square.png,images/Sunglasses-Perspective.png,Sunglasses,Rectangle sunglasses with dark red frames,Red,Plastic
+23,Baseball Hat,images/Hat-Square.png,images/Hat-Perspective.png,Hat,Plain baseball style hat ,Grey,Cotton
+24,Beanie Hot,images/Beanie-Square.png,images/Beanie-Perspective.png,Hat,Warm knitted wooly hat,Grey,Merino
